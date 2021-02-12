@@ -12,7 +12,7 @@ For detailed documentation on how to use this sample app, and compile it, see th
 
 For questions and support:
 
--  [StackOverflow [citrix] [mdm] tags](https://stackoverflow.com/questions/tagged/mdm+citrixm)
+-  [StackOverflow [citrix] [mdm] tags](https://stackoverflow.com/questions/tagged/mdm+citrix)
 -  [Citrix Discussion Forum](https://discussions.citrix.com/forum/1797-mobile-app-management-mam/)
 
 

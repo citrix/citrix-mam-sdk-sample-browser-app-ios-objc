@@ -1,0 +1,1231 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D728BB524B8FCF200A5EF0E /* CitrixLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAA24B8FCC500A5EF0E /* CitrixLogger.framework */; };
+		5D728BB624B8FCF200A5EF0E /* CitrixLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAA24B8FCC500A5EF0E /* CitrixLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D728BB724B8FCF500A5EF0E /* CTXMAMAppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BA924B8FCC400A5EF0E /* CTXMAMAppCore.framework */; };
+		5D728BB824B8FCF500A5EF0E /* CTXMAMAppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BA924B8FCC400A5EF0E /* CTXMAMAppCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D728BBD24B8FCFF00A5EF0E /* CTXMAMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAD24B8FCC500A5EF0E /* CTXMAMCore.framework */; };
+		5D728BBE24B8FCFF00A5EF0E /* CTXMAMCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAD24B8FCC500A5EF0E /* CTXMAMCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D728BC924B91D7000A5EF0E /* CTXMAMCompliance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAB24B8FCC500A5EF0E /* CTXMAMCompliance.framework */; };
+		5D728BCA24B91D7000A5EF0E /* CTXMAMCompliance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAB24B8FCC500A5EF0E /* CTXMAMCompliance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D728BCB24B91FC000A5EF0E /* CTXMAMContainment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BA824B8FCC400A5EF0E /* CTXMAMContainment.framework */; };
+		5D728BCC24B91FC000A5EF0E /* CTXMAMContainment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BA824B8FCC400A5EF0E /* CTXMAMContainment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D728BCD24B91FC300A5EF0E /* CTXMAMLocalAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E41201235F7CB000CA52EE /* CTXMAMLocalAuth.framework */; };
+		5D728BCE24B91FC400A5EF0E /* CTXMAMLocalAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34E41201235F7CB000CA52EE /* CTXMAMLocalAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D728BCF24B91FC600A5EF0E /* CTXMAMNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAC24B8FCC500A5EF0E /* CTXMAMNetwork.framework */; };
+		5D728BD024B91FC600A5EF0E /* CTXMAMNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAC24B8FCC500A5EF0E /* CTXMAMNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DE0FD6022E645230044ABC4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE0FD5F22E645220044ABC4 /* WebKit.framework */; };
+		6E3D0A412243E0240096198B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A402243E0240096198B /* AppDelegate.m */; };
+		6E3D0A442243E0240096198B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A432243E0240096198B /* ViewController.m */; };
+		6E3D0A472243E0240096198B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A452243E0240096198B /* Main.storyboard */; };
+		6E3D0A492243E02D0096198B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A482243E02D0096198B /* Assets.xcassets */; };
+		6E3D0A4C2243E02D0096198B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A4A2243E02D0096198B /* LaunchScreen.storyboard */; };
+		6E3D0A4F2243E02D0096198B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A4E2243E02D0096198B /* main.m */; };
+		6E3D0A592243E02D0096198B /* SimpleBrowserAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A582243E02D0096198B /* SimpleBrowserAppTests.m */; };
+		6E3D0A642243E02D0096198B /* SimpleBrowserAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A632243E02D0096198B /* SimpleBrowserAppUITests.m */; };
+		6E3D0A9C224417460096198B /* AppIcon512x512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A96224417460096198B /* AppIcon512x512@2x.png */; };
+		6E3D0AA722441CCB0096198B /* AppIcon83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9D22441CCB0096198B /* AppIcon83.5x83.5@2x.png */; };
+		6E3D0AA822441CCB0096198B /* AppIcon20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9E22441CCB0096198B /* AppIcon20x20@2x.png */; };
+		6E3D0AA922441CCB0096198B /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9F22441CCB0096198B /* AppIcon40x40@2x.png */; };
+		6E3D0AAA22441CCB0096198B /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA022441CCB0096198B /* AppIcon29x29@2x.png */; };
+		6E3D0AAB22441CCB0096198B /* AppIcon40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA122441CCB0096198B /* AppIcon40x40@3x.png */; };
+		6E3D0AAC22441CCB0096198B /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA222441CCB0096198B /* AppIcon76x76@2x.png */; };
+		6E3D0AAD22441CCB0096198B /* AppIcon20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA322441CCB0096198B /* AppIcon20x20.png */; };
+		6E3D0AAE22441CCB0096198B /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA422441CCB0096198B /* AppIcon29x29@3x.png */; };
+		6E3D0AAF22441CCB0096198B /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA522441CCB0096198B /* AppIcon29x29.png */; };
+		6E3D0AB022441CCB0096198B /* AppIcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA622441CCB0096198B /* AppIcon60x60@3x.png */; };
+		6E3D0AB322441DE00096198B /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AB122441DE00096198B /* AppIcon60x60.png */; };
+		6E3D0AB422441DE00096198B /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AB222441DE00096198B /* AppIcon76x76.png */; };
+		6E560DE622F0BDA9005152F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE522F0BDA9005152F8 /* UIKit.framework */; };
+		6E560DE822F0BDB5005152F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE722F0BDB5005152F8 /* Foundation.framework */; };
+		9DAD345F2375136500E2DE30 /* AppDelegateComplianceOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAD345E2375136500E2DE30 /* AppDelegateComplianceOnly.m */; };
+		9DDBA4FC23CE494F0092C76C /* SceneDelegateComplianceOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA4F723CE38BB0092C76C /* SceneDelegateComplianceOnly.m */; };
+		9DDBA4FF23CE6D780092C76C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A432243E0240096198B /* ViewController.m */; };
+		9DDBA50023CE6D780092C76C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A4E2243E02D0096198B /* main.m */; };
+		9DDBA50123CE6D780092C76C /* AppDelegateComplianceOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAD345E2375136500E2DE30 /* AppDelegateComplianceOnly.m */; };
+		9DDBA50223CE6D780092C76C /* SceneDelegateComplianceOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA4F723CE38BB0092C76C /* SceneDelegateComplianceOnly.m */; };
+		9DDBA50423CE6D780092C76C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE722F0BDB5005152F8 /* Foundation.framework */; };
+		9DDBA50523CE6D780092C76C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE522F0BDA9005152F8 /* UIKit.framework */; };
+		9DDBA50623CE6D780092C76C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE0FD5F22E645220044ABC4 /* WebKit.framework */; };
+		9DDBA50B23CE6D780092C76C /* AppIcon83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9D22441CCB0096198B /* AppIcon83.5x83.5@2x.png */; };
+		9DDBA50C23CE6D780092C76C /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AB122441DE00096198B /* AppIcon60x60.png */; };
+		9DDBA50D23CE6D780092C76C /* AppIcon20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9E22441CCB0096198B /* AppIcon20x20@2x.png */; };
+		9DDBA50E23CE6D780092C76C /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9F22441CCB0096198B /* AppIcon40x40@2x.png */; };
+		9DDBA50F23CE6D780092C76C /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA522441CCB0096198B /* AppIcon29x29.png */; };
+		9DDBA51023CE6D780092C76C /* AppIcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA622441CCB0096198B /* AppIcon60x60@3x.png */; };
+		9DDBA51123CE6D780092C76C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A4A2243E02D0096198B /* LaunchScreen.storyboard */; };
+		9DDBA51223CE6D780092C76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A482243E02D0096198B /* Assets.xcassets */; };
+		9DDBA51323CE6D780092C76C /* AppIcon20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA322441CCB0096198B /* AppIcon20x20.png */; };
+		9DDBA51423CE6D780092C76C /* AppIcon40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA122441CCB0096198B /* AppIcon40x40@3x.png */; };
+		9DDBA51523CE6D780092C76C /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA222441CCB0096198B /* AppIcon76x76@2x.png */; };
+		9DDBA51623CE6D780092C76C /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AB222441DE00096198B /* AppIcon76x76.png */; };
+		9DDBA51723CE6D780092C76C /* AppIcon512x512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A96224417460096198B /* AppIcon512x512@2x.png */; };
+		9DDBA51823CE6D780092C76C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A452243E0240096198B /* Main.storyboard */; };
+		9DDBA51923CE6D780092C76C /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA422441CCB0096198B /* AppIcon29x29@3x.png */; };
+		9DDBA51A23CE6D780092C76C /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA022441CCB0096198B /* AppIcon29x29@2x.png */; };
+		9DDBA52723CE76480092C76C /* AppDelegate+UISceneSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA52623CE76480092C76C /* AppDelegate+UISceneSupport.m */; };
+		9DDBA55123D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */; };
+		9DDBA55223D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */; };
+		9DDBA55323D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */; };
+		9DE68E3723467B7100643B9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A432243E0240096198B /* ViewController.m */; };
+		9DE68E3823467B7100643B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A4E2243E02D0096198B /* main.m */; };
+		9DE68E3B23467B7100643B9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE722F0BDB5005152F8 /* Foundation.framework */; };
+		9DE68E3C23467B7100643B9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE522F0BDA9005152F8 /* UIKit.framework */; };
+		9DE68E3D23467B7100643B9A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE0FD5F22E645220044ABC4 /* WebKit.framework */; };
+		9DE68E4523467B7100643B9A /* AppIcon83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9D22441CCB0096198B /* AppIcon83.5x83.5@2x.png */; };
+		9DE68E4623467B7100643B9A /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AB122441DE00096198B /* AppIcon60x60.png */; };
+		9DE68E4723467B7100643B9A /* AppIcon20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9E22441CCB0096198B /* AppIcon20x20@2x.png */; };
+		9DE68E4823467B7100643B9A /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9F22441CCB0096198B /* AppIcon40x40@2x.png */; };
+		9DE68E4923467B7100643B9A /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA522441CCB0096198B /* AppIcon29x29.png */; };
+		9DE68E4A23467B7100643B9A /* AppIcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA622441CCB0096198B /* AppIcon60x60@3x.png */; };
+		9DE68E4B23467B7100643B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A4A2243E02D0096198B /* LaunchScreen.storyboard */; };
+		9DE68E4C23467B7100643B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A482243E02D0096198B /* Assets.xcassets */; };
+		9DE68E4D23467B7100643B9A /* AppIcon20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA322441CCB0096198B /* AppIcon20x20.png */; };
+		9DE68E4E23467B7100643B9A /* AppIcon40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA122441CCB0096198B /* AppIcon40x40@3x.png */; };
+		9DE68E4F23467B7100643B9A /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA222441CCB0096198B /* AppIcon76x76@2x.png */; };
+		9DE68E5023467B7100643B9A /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AB222441DE00096198B /* AppIcon76x76.png */; };
+		9DE68E5123467B7100643B9A /* AppIcon512x512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A96224417460096198B /* AppIcon512x512@2x.png */; };
+		9DE68E5223467B7100643B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A452243E0240096198B /* Main.storyboard */; };
+		9DE68E5323467B7100643B9A /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA422441CCB0096198B /* AppIcon29x29@3x.png */; };
+		9DE68E5423467B7100643B9A /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA022441CCB0096198B /* AppIcon29x29@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E3D0A552243E02D0096198B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E3D0A342243E0240096198B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E3D0A3B2243E0240096198B;
+			remoteInfo = SimpleBrowserApp;
+		};
+		6E3D0A602243E02D0096198B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E3D0A342243E0240096198B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E3D0A3B2243E0240096198B;
+			remoteInfo = SimpleBrowserApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6EFD6BF42244286D00E023D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5D728BB624B8FCF200A5EF0E /* CitrixLogger.framework in Embed Frameworks */,
+				5D728BB824B8FCF500A5EF0E /* CTXMAMAppCore.framework in Embed Frameworks */,
+				5D728BBE24B8FCFF00A5EF0E /* CTXMAMCore.framework in Embed Frameworks */,
+				5D728BCC24B91FC000A5EF0E /* CTXMAMContainment.framework in Embed Frameworks */,
+				5D728BCE24B91FC400A5EF0E /* CTXMAMLocalAuth.framework in Embed Frameworks */,
+				5D728BD024B91FC600A5EF0E /* CTXMAMNetwork.framework in Embed Frameworks */,
+				5D728BCA24B91D7000A5EF0E /* CTXMAMCompliance.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DDBA51B23CE6D780092C76C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE68E5523467B7100643B9A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		34E41201235F7CB000CA52EE /* CTXMAMLocalAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTXMAMLocalAuth.framework; sourceTree = "<group>"; };
+		5D728BA824B8FCC400A5EF0E /* CTXMAMContainment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTXMAMContainment.framework; sourceTree = "<group>"; };
+		5D728BA924B8FCC400A5EF0E /* CTXMAMAppCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTXMAMAppCore.framework; sourceTree = "<group>"; };
+		5D728BAA24B8FCC500A5EF0E /* CitrixLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CitrixLogger.framework; sourceTree = "<group>"; };
+		5D728BAB24B8FCC500A5EF0E /* CTXMAMCompliance.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTXMAMCompliance.framework; sourceTree = "<group>"; };
+		5D728BAC24B8FCC500A5EF0E /* CTXMAMNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTXMAMNetwork.framework; sourceTree = "<group>"; };
+		5D728BAD24B8FCC500A5EF0E /* CTXMAMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTXMAMCore.framework; sourceTree = "<group>"; };
+		5D728BC324B8FDF200A5EF0E /* CGAppCLPrepTool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = CGAppCLPrepTool; path = ../Tools/CGAppCLPrepTool; sourceTree = "<group>"; };
+		5DE0FD5F22E645220044ABC4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		6E3D0A3C2243E0240096198B /* Citrix Simple Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citrix Simple Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E3D0A3F2243E0240096198B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6E3D0A402243E0240096198B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6E3D0A422243E0240096198B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6E3D0A432243E0240096198B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6E3D0A462243E0240096198B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E3D0A482243E02D0096198B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E3D0A4B2243E02D0096198B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E3D0A4D2243E02D0096198B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E3D0A4E2243E02D0096198B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E3D0A542243E02D0096198B /* SimpleBrowserAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBrowserAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E3D0A582243E02D0096198B /* SimpleBrowserAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleBrowserAppTests.m; sourceTree = "<group>"; };
+		6E3D0A5A2243E02D0096198B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E3D0A5F2243E02D0096198B /* SimpleBrowserAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBrowserAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E3D0A632243E02D0096198B /* SimpleBrowserAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleBrowserAppUITests.m; sourceTree = "<group>"; };
+		6E3D0A652243E02D0096198B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E3D0A96224417460096198B /* AppIcon512x512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon512x512@2x.png"; sourceTree = "<group>"; };
+		6E3D0A9D22441CCB0096198B /* AppIcon83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		6E3D0A9E22441CCB0096198B /* AppIcon20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon20x20@2x.png"; sourceTree = "<group>"; };
+		6E3D0A9F22441CCB0096198B /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@2x.png"; sourceTree = "<group>"; };
+		6E3D0AA022441CCB0096198B /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
+		6E3D0AA122441CCB0096198B /* AppIcon40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@3x.png"; sourceTree = "<group>"; };
+		6E3D0AA222441CCB0096198B /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76@2x.png"; sourceTree = "<group>"; };
+		6E3D0AA322441CCB0096198B /* AppIcon20x20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon20x20.png; sourceTree = "<group>"; };
+		6E3D0AA422441CCB0096198B /* AppIcon29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@3x.png"; sourceTree = "<group>"; };
+		6E3D0AA522441CCB0096198B /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
+		6E3D0AA622441CCB0096198B /* AppIcon60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@3x.png"; sourceTree = "<group>"; };
+		6E3D0AB122441DE00096198B /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon60x60.png; sourceTree = "<group>"; };
+		6E3D0AB222441DE00096198B /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon76x76.png; sourceTree = "<group>"; };
+		6E560DE522F0BDA9005152F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E560DE722F0BDB5005152F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9DAD345E2375136500E2DE30 /* AppDelegateComplianceOnly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegateComplianceOnly.m; sourceTree = "<group>"; };
+		9DDBA4F623CE38BB0092C76C /* SceneDelegateComplianceOnly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegateComplianceOnly.h; sourceTree = "<group>"; };
+		9DDBA4F723CE38BB0092C76C /* SceneDelegateComplianceOnly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegateComplianceOnly.m; sourceTree = "<group>"; };
+		9DDBA52323CE6D780092C76C /* SimpleBrowserAppComplianceOnlyWithUIScene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBrowserAppComplianceOnlyWithUIScene.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDBA52423CE6D780092C76C /* ComplianceOnlyWithUIScene-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ComplianceOnlyWithUIScene-Info.plist"; path = "/Users/Jagz/git/explicitsdks/TestApps/SimpleBrowserApp/ComplianceOnlyWithUIScene-Info.plist"; sourceTree = "<absolute>"; };
+		9DDBA52523CE76480092C76C /* AppDelegate+UISceneSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UISceneSupport.h"; sourceTree = "<group>"; };
+		9DDBA52623CE76480092C76C /* AppDelegate+UISceneSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UISceneSupport.m"; sourceTree = "<group>"; };
+		9DDBA54F23D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ComplianceSDKDelegate.h"; sourceTree = "<group>"; };
+		9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ComplianceSDKDelegate.m"; sourceTree = "<group>"; };
+		9DE68E6023467B7100643B9A /* SimpleBrowserAppComplianceOnly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBrowserAppComplianceOnly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE68E6123467B7100643B9A /* ComplianceOnly-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ComplianceOnly-Info.plist"; sourceTree = "<group>"; };
+		9DE68E672346CA8E00643B9A /* SimpleBrowserAppComplianceOnly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleBrowserAppComplianceOnly.entitlements; sourceTree = "<group>"; };
+		9DE68E682346CFCA00643B9A /* SimpleBrowserApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleBrowserApp.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E3D0A392243E0240096198B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E560DE822F0BDB5005152F8 /* Foundation.framework in Frameworks */,
+				5D728BCF24B91FC600A5EF0E /* CTXMAMNetwork.framework in Frameworks */,
+				5D728BCB24B91FC000A5EF0E /* CTXMAMContainment.framework in Frameworks */,
+				6E560DE622F0BDA9005152F8 /* UIKit.framework in Frameworks */,
+				5DE0FD6022E645230044ABC4 /* WebKit.framework in Frameworks */,
+				5D728BCD24B91FC300A5EF0E /* CTXMAMLocalAuth.framework in Frameworks */,
+				5D728BB724B8FCF500A5EF0E /* CTXMAMAppCore.framework in Frameworks */,
+				5D728BC924B91D7000A5EF0E /* CTXMAMCompliance.framework in Frameworks */,
+				5D728BB524B8FCF200A5EF0E /* CitrixLogger.framework in Frameworks */,
+				5D728BBD24B8FCFF00A5EF0E /* CTXMAMCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E3D0A512243E02D0096198B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E3D0A5C2243E02D0096198B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DDBA50323CE6D780092C76C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDBA50423CE6D780092C76C /* Foundation.framework in Frameworks */,
+				9DDBA50523CE6D780092C76C /* UIKit.framework in Frameworks */,
+				9DDBA50623CE6D780092C76C /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE68E3A23467B7100643B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE68E3B23467B7100643B9A /* Foundation.framework in Frameworks */,
+				9DE68E3C23467B7100643B9A /* UIKit.framework in Frameworks */,
+				9DE68E3D23467B7100643B9A /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D728BC224B8FDE400A5EF0E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5D728BC324B8FDF200A5EF0E /* CGAppCLPrepTool */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		6E3D0A332243E0240096198B = {
+			isa = PBXGroup;
+			children = (
+				5D728BC224B8FDE400A5EF0E /* Tools */,
+				6E3D0A8D2244128A0096198B /* Resources */,
+				6E3D0A7E22440C8E0096198B /* Frameworks */,
+				6E3D0A3E2243E0240096198B /* SimpleBrowserApp */,
+				6E3D0A572243E02D0096198B /* SimpleBrowserAppTests */,
+				6E3D0A622243E02D0096198B /* SimpleBrowserAppUITests */,
+				6E3D0A3D2243E0240096198B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E3D0A3D2243E0240096198B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E3D0A3C2243E0240096198B /* Citrix Simple Browser.app */,
+				6E3D0A542243E02D0096198B /* SimpleBrowserAppTests.xctest */,
+				6E3D0A5F2243E02D0096198B /* SimpleBrowserAppUITests.xctest */,
+				9DE68E6023467B7100643B9A /* SimpleBrowserAppComplianceOnly.app */,
+				9DDBA52323CE6D780092C76C /* SimpleBrowserAppComplianceOnlyWithUIScene.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E3D0A3E2243E0240096198B /* SimpleBrowserApp */ = {
+			isa = PBXGroup;
+			children = (
+				9DE68E682346CFCA00643B9A /* SimpleBrowserApp.entitlements */,
+				9DE68E672346CA8E00643B9A /* SimpleBrowserAppComplianceOnly.entitlements */,
+				6E3D0A3F2243E0240096198B /* AppDelegate.h */,
+				6E3D0A402243E0240096198B /* AppDelegate.m */,
+				9DAD345E2375136500E2DE30 /* AppDelegateComplianceOnly.m */,
+				9DDBA52523CE76480092C76C /* AppDelegate+UISceneSupport.h */,
+				9DDBA52623CE76480092C76C /* AppDelegate+UISceneSupport.m */,
+				9DDBA54F23D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.h */,
+				9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */,
+				9DDBA4F623CE38BB0092C76C /* SceneDelegateComplianceOnly.h */,
+				9DDBA4F723CE38BB0092C76C /* SceneDelegateComplianceOnly.m */,
+				6E3D0A422243E0240096198B /* ViewController.h */,
+				6E3D0A432243E0240096198B /* ViewController.m */,
+				6E3D0A452243E0240096198B /* Main.storyboard */,
+				6E3D0A482243E02D0096198B /* Assets.xcassets */,
+				6E3D0A4A2243E02D0096198B /* LaunchScreen.storyboard */,
+				6E3D0A4D2243E02D0096198B /* Info.plist */,
+				9DE68E6123467B7100643B9A /* ComplianceOnly-Info.plist */,
+				9DDBA52423CE6D780092C76C /* ComplianceOnlyWithUIScene-Info.plist */,
+				6E3D0A4E2243E02D0096198B /* main.m */,
+			);
+			path = SimpleBrowserApp;
+			sourceTree = "<group>";
+		};
+		6E3D0A572243E02D0096198B /* SimpleBrowserAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E3D0A582243E02D0096198B /* SimpleBrowserAppTests.m */,
+				6E3D0A5A2243E02D0096198B /* Info.plist */,
+			);
+			path = SimpleBrowserAppTests;
+			sourceTree = "<group>";
+		};
+		6E3D0A622243E02D0096198B /* SimpleBrowserAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E3D0A632243E02D0096198B /* SimpleBrowserAppUITests.m */,
+				6E3D0A652243E02D0096198B /* Info.plist */,
+			);
+			path = SimpleBrowserAppUITests;
+			sourceTree = "<group>";
+		};
+		6E3D0A7E22440C8E0096198B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D728BAA24B8FCC500A5EF0E /* CitrixLogger.framework */,
+				5D728BA924B8FCC400A5EF0E /* CTXMAMAppCore.framework */,
+				5D728BAB24B8FCC500A5EF0E /* CTXMAMCompliance.framework */,
+				5D728BA824B8FCC400A5EF0E /* CTXMAMContainment.framework */,
+				5D728BAD24B8FCC500A5EF0E /* CTXMAMCore.framework */,
+				34E41201235F7CB000CA52EE /* CTXMAMLocalAuth.framework */,
+				5D728BAC24B8FCC500A5EF0E /* CTXMAMNetwork.framework */,
+				6E560DE722F0BDB5005152F8 /* Foundation.framework */,
+				6E560DE522F0BDA9005152F8 /* UIKit.framework */,
+				5DE0FD5F22E645220044ABC4 /* WebKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E3D0A8D2244128A0096198B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E3D0A8E224412970096198B /* Icons */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6E3D0A8E224412970096198B /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				6E3D0AB122441DE00096198B /* AppIcon60x60.png */,
+				6E3D0AB222441DE00096198B /* AppIcon76x76.png */,
+				6E3D0AA322441CCB0096198B /* AppIcon20x20.png */,
+				6E3D0A9E22441CCB0096198B /* AppIcon20x20@2x.png */,
+				6E3D0AA522441CCB0096198B /* AppIcon29x29.png */,
+				6E3D0AA022441CCB0096198B /* AppIcon29x29@2x.png */,
+				6E3D0AA422441CCB0096198B /* AppIcon29x29@3x.png */,
+				6E3D0A9F22441CCB0096198B /* AppIcon40x40@2x.png */,
+				6E3D0AA122441CCB0096198B /* AppIcon40x40@3x.png */,
+				6E3D0AA622441CCB0096198B /* AppIcon60x60@3x.png */,
+				6E3D0AA222441CCB0096198B /* AppIcon76x76@2x.png */,
+				6E3D0A9D22441CCB0096198B /* AppIcon83.5x83.5@2x.png */,
+				6E3D0A96224417460096198B /* AppIcon512x512@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E3D0A3B2243E0240096198B /* SimpleBrowserApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E3D0A682243E02D0096198B /* Build configuration list for PBXNativeTarget "SimpleBrowserApp" */;
+			buildPhases = (
+				6E3D0A382243E0240096198B /* Sources */,
+				6E3D0A392243E0240096198B /* Frameworks */,
+				6E3D0A3A2243E0240096198B /* Resources */,
+				6EFD6BF42244286D00E023D8 /* Embed Frameworks */,
+				6E3D0A7D22440BE30096198B /* Create MDX File */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleBrowserApp;
+			productName = SimpleBrowserApp;
+			productReference = 6E3D0A3C2243E0240096198B /* Citrix Simple Browser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E3D0A532243E02D0096198B /* SimpleBrowserAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E3D0A6B2243E02D0096198B /* Build configuration list for PBXNativeTarget "SimpleBrowserAppTests" */;
+			buildPhases = (
+				6E3D0A502243E02D0096198B /* Sources */,
+				6E3D0A512243E02D0096198B /* Frameworks */,
+				6E3D0A522243E02D0096198B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E3D0A562243E02D0096198B /* PBXTargetDependency */,
+			);
+			name = SimpleBrowserAppTests;
+			productName = SimpleBrowserAppTests;
+			productReference = 6E3D0A542243E02D0096198B /* SimpleBrowserAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E3D0A5E2243E02D0096198B /* SimpleBrowserAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E3D0A6E2243E02D0096198B /* Build configuration list for PBXNativeTarget "SimpleBrowserAppUITests" */;
+			buildPhases = (
+				6E3D0A5B2243E02D0096198B /* Sources */,
+				6E3D0A5C2243E02D0096198B /* Frameworks */,
+				6E3D0A5D2243E02D0096198B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E3D0A612243E02D0096198B /* PBXTargetDependency */,
+			);
+			name = SimpleBrowserAppUITests;
+			productName = SimpleBrowserAppUITests;
+			productReference = 6E3D0A5F2243E02D0096198B /* SimpleBrowserAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9DDBA4FD23CE6D780092C76C /* SimpleBrowserAppComplianceOnlyWithUIScene */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DDBA52023CE6D780092C76C /* Build configuration list for PBXNativeTarget "SimpleBrowserAppComplianceOnlyWithUIScene" */;
+			buildPhases = (
+				9DDBA4FE23CE6D780092C76C /* Sources */,
+				9DDBA50323CE6D780092C76C /* Frameworks */,
+				9DDBA50A23CE6D780092C76C /* Resources */,
+				9DDBA51B23CE6D780092C76C /* Embed Frameworks */,
+				9DDBA51F23CE6D780092C76C /* Create MDX File */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleBrowserAppComplianceOnlyWithUIScene;
+			productName = SimpleBrowserApp;
+			productReference = 9DDBA52323CE6D780092C76C /* SimpleBrowserAppComplianceOnlyWithUIScene.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DE68E3523467B7100643B9A /* SimpleBrowserAppComplianceOnly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE68E5D23467B7100643B9A /* Build configuration list for PBXNativeTarget "SimpleBrowserAppComplianceOnly" */;
+			buildPhases = (
+				9DE68E3623467B7100643B9A /* Sources */,
+				9DE68E3A23467B7100643B9A /* Frameworks */,
+				9DE68E4423467B7100643B9A /* Resources */,
+				9DE68E5523467B7100643B9A /* Embed Frameworks */,
+				9DE68E5C23467B7100643B9A /* Create MDX File */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleBrowserAppComplianceOnly;
+			productName = SimpleBrowserApp;
+			productReference = 9DE68E6023467B7100643B9A /* SimpleBrowserAppComplianceOnly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E3D0A342243E0240096198B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Citrix Systems, Inc.";
+				TargetAttributes = {
+					6E3D0A3B2243E0240096198B = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					6E3D0A532243E02D0096198B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6E3D0A3B2243E0240096198B;
+					};
+					6E3D0A5E2243E02D0096198B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6E3D0A3B2243E0240096198B;
+					};
+					9DE68E3523467B7100643B9A = {
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 6E3D0A372243E0240096198B /* Build configuration list for PBXProject "SimpleBrowserApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E3D0A332243E0240096198B;
+			productRefGroup = 6E3D0A3D2243E0240096198B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E3D0A3B2243E0240096198B /* SimpleBrowserApp */,
+				6E3D0A532243E02D0096198B /* SimpleBrowserAppTests */,
+				6E3D0A5E2243E02D0096198B /* SimpleBrowserAppUITests */,
+				9DE68E3523467B7100643B9A /* SimpleBrowserAppComplianceOnly */,
+				9DDBA4FD23CE6D780092C76C /* SimpleBrowserAppComplianceOnlyWithUIScene */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E3D0A3A2243E0240096198B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E3D0AA722441CCB0096198B /* AppIcon83.5x83.5@2x.png in Resources */,
+				6E3D0AB322441DE00096198B /* AppIcon60x60.png in Resources */,
+				6E3D0AA822441CCB0096198B /* AppIcon20x20@2x.png in Resources */,
+				6E3D0AA922441CCB0096198B /* AppIcon40x40@2x.png in Resources */,
+				6E3D0AAF22441CCB0096198B /* AppIcon29x29.png in Resources */,
+				6E3D0AB022441CCB0096198B /* AppIcon60x60@3x.png in Resources */,
+				6E3D0A4C2243E02D0096198B /* LaunchScreen.storyboard in Resources */,
+				6E3D0A492243E02D0096198B /* Assets.xcassets in Resources */,
+				6E3D0AAD22441CCB0096198B /* AppIcon20x20.png in Resources */,
+				6E3D0AAB22441CCB0096198B /* AppIcon40x40@3x.png in Resources */,
+				6E3D0AAC22441CCB0096198B /* AppIcon76x76@2x.png in Resources */,
+				6E3D0AB422441DE00096198B /* AppIcon76x76.png in Resources */,
+				6E3D0A9C224417460096198B /* AppIcon512x512@2x.png in Resources */,
+				6E3D0A472243E0240096198B /* Main.storyboard in Resources */,
+				6E3D0AAE22441CCB0096198B /* AppIcon29x29@3x.png in Resources */,
+				6E3D0AAA22441CCB0096198B /* AppIcon29x29@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E3D0A522243E02D0096198B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E3D0A5D2243E02D0096198B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DDBA50A23CE6D780092C76C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDBA50B23CE6D780092C76C /* AppIcon83.5x83.5@2x.png in Resources */,
+				9DDBA50C23CE6D780092C76C /* AppIcon60x60.png in Resources */,
+				9DDBA50D23CE6D780092C76C /* AppIcon20x20@2x.png in Resources */,
+				9DDBA50E23CE6D780092C76C /* AppIcon40x40@2x.png in Resources */,
+				9DDBA50F23CE6D780092C76C /* AppIcon29x29.png in Resources */,
+				9DDBA51023CE6D780092C76C /* AppIcon60x60@3x.png in Resources */,
+				9DDBA51123CE6D780092C76C /* LaunchScreen.storyboard in Resources */,
+				9DDBA51223CE6D780092C76C /* Assets.xcassets in Resources */,
+				9DDBA51323CE6D780092C76C /* AppIcon20x20.png in Resources */,
+				9DDBA51423CE6D780092C76C /* AppIcon40x40@3x.png in Resources */,
+				9DDBA51523CE6D780092C76C /* AppIcon76x76@2x.png in Resources */,
+				9DDBA51623CE6D780092C76C /* AppIcon76x76.png in Resources */,
+				9DDBA51723CE6D780092C76C /* AppIcon512x512@2x.png in Resources */,
+				9DDBA51823CE6D780092C76C /* Main.storyboard in Resources */,
+				9DDBA51923CE6D780092C76C /* AppIcon29x29@3x.png in Resources */,
+				9DDBA51A23CE6D780092C76C /* AppIcon29x29@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE68E4423467B7100643B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE68E4523467B7100643B9A /* AppIcon83.5x83.5@2x.png in Resources */,
+				9DE68E4623467B7100643B9A /* AppIcon60x60.png in Resources */,
+				9DE68E4723467B7100643B9A /* AppIcon20x20@2x.png in Resources */,
+				9DE68E4823467B7100643B9A /* AppIcon40x40@2x.png in Resources */,
+				9DE68E4923467B7100643B9A /* AppIcon29x29.png in Resources */,
+				9DE68E4A23467B7100643B9A /* AppIcon60x60@3x.png in Resources */,
+				9DE68E4B23467B7100643B9A /* LaunchScreen.storyboard in Resources */,
+				9DE68E4C23467B7100643B9A /* Assets.xcassets in Resources */,
+				9DE68E4D23467B7100643B9A /* AppIcon20x20.png in Resources */,
+				9DE68E4E23467B7100643B9A /* AppIcon40x40@3x.png in Resources */,
+				9DE68E4F23467B7100643B9A /* AppIcon76x76@2x.png in Resources */,
+				9DE68E5023467B7100643B9A /* AppIcon76x76.png in Resources */,
+				9DE68E5123467B7100643B9A /* AppIcon512x512@2x.png in Resources */,
+				9DE68E5223467B7100643B9A /* Main.storyboard in Resources */,
+				9DE68E5323467B7100643B9A /* AppIcon29x29@3x.png in Resources */,
+				9DE68E5423467B7100643B9A /* AppIcon29x29@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E3D0A7D22440BE30096198B /* Create MDX File */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Create MDX File";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport STOREURL=\"http://yourstore.yourdomain.com\"\nexport APPTYPE=\"sdkapp\"\nexport PACKAGEID=\"7C1B0619-955F-4078-A4FB-443A52627D67\" # uuidgen\n#export PACKAGEID=\"\" #Please run uuidgen at the command line and paste the output value in the PACKAGEID variable\nexport APPIDPREFIX=\"NPB9J4KRXA\"\nexport TOOLKIT_DIR=\"$PROJECT_DIR/../Tools\"\n\nif [ -z \"${PACKAGEID}\" ]\nthen\n    echo \"PACKAGEID variable was not found or was empty, please run uuidgen at the command line and paste the output value in the PACKAGEID variable in your post build script.\"\n    exit 1\nfi\n\nif [ -z \"${APPIDPREFIX}\" ]\nthen\n    echo \"APPIDPREFIX variable was not found or was empty, please refer to the \\\"how to\\\" document located in the documentation folder of the SDK package on where to find your Apple's application prefix ID.\"\nexit 1\nfi\nif [! -d $TOOLKIT_DIR/logs ]\nthen\n    mkdir $TOOLKIT_DIR/logs\nfi\n\n\n\"$TOOLKIT_DIR/CGAppCLPrepTool\" SdkPrep -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -storeURL \"${STOREURL}\" -appType \"${APPTYPE}\" -packageId \"${PACKAGEID}\" -entitlements \"$SRCROOT/$PROJECT/$PROJECT.entitlements\" -appIdPrefix \"${APPIDPREFIX}\" -minPlatform \"9.0\"\n\n#If you would like to embed your IPA file into the MDX file create the IPA file using the archiving feature of xcode and then use the following command to do so. \n#Provide IPA File Path\n#export IPA_FILE_PATH=\"\"\n#\"$TOOLKIT_DIR/CGAppCLPrepTool\" SetInfo -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\"  -embedBundle \"${IPA_FILE_PATH}\"\n";
+		};
+		9DDBA51F23CE6D780092C76C /* Create MDX File */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Create MDX File";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport STOREURL=\"http://yourstore.yourdomain.com\"\nexport APPTYPE=\"sdkapp\"\nexport PACKAGEID=\"7C1B0619-955F-4078-A4FB-443A52627D67\" # uuidgen\n#export PACKAGEID=\"\" #Please run uuidgen at the command line and paste the output value in the PACKAGEID variable\nexport APPIDPREFIX=\"NPB9J4KRXA\"\nexport TOOLKIT_DIR=\"$PROJECT_DIR/../Tools\"\n\nif [ -z \"${PACKAGEID}\" ]\nthen\n    echo \"PACKAGEID variable was not found or was empty, please run uuidgen at the command line and paste the output value in the PACKAGEID variable in your post build script.\"\n    exit 1\nfi\n\nif [ -z \"${APPIDPREFIX}\" ]\nthen\n    echo \"APPIDPREFIX variable was not found or was empty, please refer to the \\\"how to\\\" document located in the documentation folder of the SDK package on where to find your Apple's application prefix ID.\"\nexit 1\nfi\nif [! -d $TOOLKIT_DIR/logs ]\nthen\n    mkdir $TOOLKIT_DIR/logs\nfi\n\n\n\"$TOOLKIT_DIR/CGAppCLPrepTool\" SdkPrep -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -storeURL \"${STOREURL}\" -appType \"${APPTYPE}\" -packageId \"${PACKAGEID}\" -entitlements \"$SRCROOT/$PROJECT/$PROJECT.entitlements\" -appIdPrefix \"${APPIDPREFIX}\" -minPlatform \"9.0\"\n\n#If you would like to embed your IPA file into the MDX file create the IPA file using the archiving feature of xcode and then use the following command to do so. \n#Provide IPA File Path\n#export IPA_FILE_PATH=\"\"\n#\"$TOOLKIT_DIR/CGAppCLPrepTool\" SetInfo -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\"  -embedBundle \"${IPA_FILE_PATH}\"\n";
+		};
+		9DE68E5C23467B7100643B9A /* Create MDX File */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Create MDX File";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport STOREURL=\"http://yourstore.yourdomain.com\"\nexport APPTYPE=\"sdkapp\"\nexport PACKAGEID=\"7C1B0619-955F-4078-A4FB-443A52627D67\" # uuidgen\n#export PACKAGEID=\"\" #Please run uuidgen at the command line and paste the output value in the PACKAGEID variable\nexport APPIDPREFIX=\"NPB9J4KRXA\"\nexport TOOLKIT_DIR=\"$PROJECT_DIR/../Tools\"\n\nif [ -z \"${PACKAGEID}\" ]\nthen\n    echo \"PACKAGEID variable was not found or was empty, please run uuidgen at the command line and paste the output value in the PACKAGEID variable in your post build script.\"\n    exit 1\nfi\n\nif [ -z \"${APPIDPREFIX}\" ]\nthen\n    echo \"APPIDPREFIX variable was not found or was empty, please refer to the \\\"how to\\\" document located in the documentation folder of the SDK package on where to find your Apple's application prefix ID.\"\nexit 1\nfi\nif [! -d $TOOLKIT_DIR/logs ]\nthen\n    mkdir $TOOLKIT_DIR/logs\nfi\n\n\n\"$TOOLKIT_DIR/CGAppCLPrepTool\" SdkPrep -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -storeURL \"${STOREURL}\" -appType \"${APPTYPE}\" -packageId \"${PACKAGEID}\" -entitlements \"$SRCROOT/$PROJECT/$PROJECT.entitlements\" -appIdPrefix \"${APPIDPREFIX}\" -minPlatform \"9.0\"\n\n#If you would like to embed your IPA file into the MDX file create the IPA file using the archiving feature of xcode and then use the following command to do so. \n#Provide IPA File Path\n#export IPA_FILE_PATH=\"\"\n#\"$TOOLKIT_DIR/CGAppCLPrepTool\" SetInfo -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\"  -embedBundle \"${IPA_FILE_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E3D0A382243E0240096198B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E3D0A442243E0240096198B /* ViewController.m in Sources */,
+				6E3D0A4F2243E02D0096198B /* main.m in Sources */,
+				6E3D0A412243E0240096198B /* AppDelegate.m in Sources */,
+				9DDBA55123D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E3D0A502243E02D0096198B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E3D0A592243E02D0096198B /* SimpleBrowserAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E3D0A5B2243E02D0096198B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E3D0A642243E02D0096198B /* SimpleBrowserAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DDBA4FE23CE6D780092C76C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDBA4FF23CE6D780092C76C /* ViewController.m in Sources */,
+				9DDBA50023CE6D780092C76C /* main.m in Sources */,
+				9DDBA50123CE6D780092C76C /* AppDelegateComplianceOnly.m in Sources */,
+				9DDBA52723CE76480092C76C /* AppDelegate+UISceneSupport.m in Sources */,
+				9DDBA55323D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */,
+				9DDBA50223CE6D780092C76C /* SceneDelegateComplianceOnly.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE68E3623467B7100643B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE68E3723467B7100643B9A /* ViewController.m in Sources */,
+				9DE68E3823467B7100643B9A /* main.m in Sources */,
+				9DDBA55223D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */,
+				9DAD345F2375136500E2DE30 /* AppDelegateComplianceOnly.m in Sources */,
+				9DDBA4FC23CE494F0092C76C /* SceneDelegateComplianceOnly.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E3D0A562243E02D0096198B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E3D0A3B2243E0240096198B /* SimpleBrowserApp */;
+			targetProxy = 6E3D0A552243E02D0096198B /* PBXContainerItemProxy */;
+		};
+		6E3D0A612243E02D0096198B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E3D0A3B2243E0240096198B /* SimpleBrowserApp */;
+			targetProxy = 6E3D0A602243E02D0096198B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E3D0A452243E0240096198B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E3D0A462243E0240096198B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E3D0A4A2243E02D0096198B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E3D0A4B2243E02D0096198B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E3D0A662243E02D0096198B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E3D0A672243E02D0096198B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E3D0A692243E02D0096198B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SimpleBrowserApp/SimpleBrowserApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NPB9J4KRXA;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/**",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/**",
+				);
+				INFOPLIST_FILE = SimpleBrowserApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserApp;
+				PRODUCT_NAME = "Citrix Simple Browser";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBrowserApp/SimpleBrowserApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E3D0A6A2243E02D0096198B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SimpleBrowserApp/SimpleBrowserApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NPB9J4KRXA;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/**",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/**",
+				);
+				INFOPLIST_FILE = SimpleBrowserApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserApp;
+				PRODUCT_NAME = "Citrix Simple Browser";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBrowserApp/SimpleBrowserApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E3D0A6C2243E02D0096198B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NPB9J4KRXA;
+				INFOPLIST_FILE = SimpleBrowserAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleBrowserApp.app/SimpleBrowserApp";
+			};
+			name = Debug;
+		};
+		6E3D0A6D2243E02D0096198B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NPB9J4KRXA;
+				INFOPLIST_FILE = SimpleBrowserAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleBrowserApp.app/SimpleBrowserApp";
+			};
+			name = Release;
+		};
+		6E3D0A6F2243E02D0096198B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NPB9J4KRXA;
+				INFOPLIST_FILE = SimpleBrowserAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleBrowserApp;
+			};
+			name = Debug;
+		};
+		6E3D0A702243E02D0096198B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NPB9J4KRXA;
+				INFOPLIST_FILE = SimpleBrowserAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleBrowserApp;
+			};
+			name = Release;
+		};
+		9DDBA52123CE6D780092C76C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SimpleBrowserApp/SimpleBrowserAppComplianceOnly.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6PJY8ADY4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/MdxCore.framework",
+					"$(PROJECT_DIR)/Frameworks/CitrixLogger.framework",
+					"$(PROJECT_DIR)/Frameworks/CTXMAMCompliance.framework",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					COMPLIANCESDKONLY,
+				);
+				INFOPLIST_FILE = "ComplianceOnlyWithUIScene-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserApp.complianceonly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBrowserApp/SimpleBrowserApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DDBA52223CE6D780092C76C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SimpleBrowserApp/SimpleBrowserAppComplianceOnly.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6PJY8ADY4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/MdxCore.framework",
+					"$(PROJECT_DIR)/Frameworks/CitrixLogger.framework",
+					"$(PROJECT_DIR)/Frameworks/CTXMAMCompliance.framework",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = COMPLIANCESDKONLY;
+				INFOPLIST_FILE = "ComplianceOnlyWithUIScene-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserApp.complianceonly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBrowserApp/SimpleBrowserApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9DE68E5E23467B7100643B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SimpleBrowserApp/SimpleBrowserAppComplianceOnly.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6PJY8ADY4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/MdxCore.framework",
+					"$(PROJECT_DIR)/Frameworks/CitrixLogger.framework",
+					"$(PROJECT_DIR)/Frameworks/CTXMAMCompliance.framework",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					COMPLIANCESDKONLY,
+				);
+				INFOPLIST_FILE = "SimpleBrowserApp/ComplianceOnly-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserApp.complianceonly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBrowserApp/SimpleBrowserApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DE68E5F23467B7100643B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SimpleBrowserApp/SimpleBrowserAppComplianceOnly.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6PJY8ADY4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/MdxCore.framework",
+					"$(PROJECT_DIR)/Frameworks/CitrixLogger.framework",
+					"$(PROJECT_DIR)/Frameworks/CTXMAMCompliance.framework",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = COMPLIANCESDKONLY;
+				INFOPLIST_FILE = "SimpleBrowserApp/ComplianceOnly-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserApp.complianceonly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBrowserApp/SimpleBrowserApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E3D0A372243E0240096198B /* Build configuration list for PBXProject "SimpleBrowserApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E3D0A662243E02D0096198B /* Debug */,
+				6E3D0A672243E02D0096198B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E3D0A682243E02D0096198B /* Build configuration list for PBXNativeTarget "SimpleBrowserApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E3D0A692243E02D0096198B /* Debug */,
+				6E3D0A6A2243E02D0096198B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E3D0A6B2243E02D0096198B /* Build configuration list for PBXNativeTarget "SimpleBrowserAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E3D0A6C2243E02D0096198B /* Debug */,
+				6E3D0A6D2243E02D0096198B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E3D0A6E2243E02D0096198B /* Build configuration list for PBXNativeTarget "SimpleBrowserAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E3D0A6F2243E02D0096198B /* Debug */,
+				6E3D0A702243E02D0096198B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DDBA52023CE6D780092C76C /* Build configuration list for PBXNativeTarget "SimpleBrowserAppComplianceOnlyWithUIScene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DDBA52123CE6D780092C76C /* Debug */,
+				9DDBA52223CE6D780092C76C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DE68E5D23467B7100643B9A /* Build configuration list for PBXNativeTarget "SimpleBrowserAppComplianceOnly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE68E5E23467B7100643B9A /* Debug */,
+				9DE68E5F23467B7100643B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E3D0A342243E0240096198B /* Project object */;
+}

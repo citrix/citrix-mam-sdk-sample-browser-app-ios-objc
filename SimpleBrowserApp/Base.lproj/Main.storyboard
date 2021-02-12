@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rd-xJ-2pm">
+                                <rect key="frame" x="20" y="71" width="357" height="933"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHa-og-q9E" userLabel="AddressLabel">
+                                <rect key="frame" x="20" y="8" width="68" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PgJ-yb-6kM"/>
+                                    <constraint firstAttribute="width" constant="68" id="Y5s-Mk-fF2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://www.google.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sor-Jw-h9X">
+                                <rect key="frame" x="96" y="4" width="614" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nww-60-ELL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="YzO-ew-MuG"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oK-fi-0eD">
+                                <rect key="frame" x="718" y="4" width="30" height="30"/>
+                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="wbP-7b-upb"/>
+                                    <constraint firstAttribute="height" constant="30" id="zpL-k3-XUd"/>
+                                </constraints>
+                                <state key="normal" title="GO">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btGoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DC2-HY-80E"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSE-gt-uJf">
+                                <rect key="frame" x="391" y="71" width="357" height="933"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BRx-j5-LK2" appends="YES" id="aE0-im-NoQ"/>
+                                </connections>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WKWebView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLh-Q3-2v6">
+                                <rect key="frame" x="391" y="42" width="357" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIWebView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDd-RU-n47">
+                                <rect key="frame" x="20" y="42" width="357" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hYI-4T-JBh">
+                                <rect key="frame" x="188.5" y="527.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="LVi-fV-Vlc">
+                                <rect key="frame" x="559.5" y="527.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sor-Jw-h9X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="1iG-yN-EJd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TSE-gt-uJf" secondAttribute="trailing" constant="20" id="1l7-xY-d3M"/>
+                            <constraint firstItem="sor-Jw-h9X" firstAttribute="leading" secondItem="FHa-og-q9E" secondAttribute="trailing" constant="8" id="319-YD-je4"/>
+                            <constraint firstItem="8rd-xJ-2pm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4ed-mX-9OI"/>
+                            <constraint firstItem="FHa-og-q9E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Q0-yk-n1N"/>
+                            <constraint firstItem="7oK-fi-0eD" firstAttribute="leading" secondItem="sor-Jw-h9X" secondAttribute="trailing" constant="8" id="9mB-3b-6yE"/>
+                            <constraint firstItem="FHa-og-q9E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="9zC-fQ-CSM"/>
+                            <constraint firstItem="TSE-gt-uJf" firstAttribute="width" secondItem="8rd-xJ-2pm" secondAttribute="width" id="CYV-Uq-EHC"/>
+                            <constraint firstItem="LVi-fV-Vlc" firstAttribute="centerX" secondItem="TSE-gt-uJf" secondAttribute="centerX" id="DZD-Nr-8Zx"/>
+                            <constraint firstItem="BLh-Q3-2v6" firstAttribute="width" secondItem="TSE-gt-uJf" secondAttribute="width" id="E52-Tf-c06"/>
+                            <constraint firstItem="hYI-4T-JBh" firstAttribute="centerY" secondItem="8rd-xJ-2pm" secondAttribute="centerY" id="FYh-vJ-3Pz"/>
+                            <constraint firstItem="LVi-fV-Vlc" firstAttribute="centerY" secondItem="TSE-gt-uJf" secondAttribute="centerY" id="GbR-rg-pk2"/>
+                            <constraint firstItem="TSE-gt-uJf" firstAttribute="leading" secondItem="8rd-xJ-2pm" secondAttribute="trailing" constant="14" id="JdH-dj-OpR"/>
+                            <constraint firstItem="8rd-xJ-2pm" firstAttribute="top" secondItem="LDd-RU-n47" secondAttribute="bottom" constant="8" id="LYy-ul-FfF"/>
+                            <constraint firstItem="BLh-Q3-2v6" firstAttribute="top" secondItem="sor-Jw-h9X" secondAttribute="bottom" constant="8" id="RMe-QA-4Ma"/>
+                            <constraint firstItem="8rd-xJ-2pm" firstAttribute="width" secondItem="LDd-RU-n47" secondAttribute="width" id="Swj-T9-clM"/>
+                            <constraint firstItem="hYI-4T-JBh" firstAttribute="centerX" secondItem="8rd-xJ-2pm" secondAttribute="centerX" id="UIM-qO-lE5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TSE-gt-uJf" secondAttribute="bottom" constant="20" id="XOr-xQ-gLw"/>
+                            <constraint firstItem="7oK-fi-0eD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="Xqn-ta-l77"/>
+                            <constraint firstItem="TSE-gt-uJf" firstAttribute="top" secondItem="BLh-Q3-2v6" secondAttribute="bottom" constant="8" id="lTD-WB-Mq2"/>
+                            <constraint firstItem="LDd-RU-n47" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lwL-la-ppf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BLh-Q3-2v6" secondAttribute="trailing" constant="20" id="mcI-Fk-CcQ"/>
+                            <constraint firstItem="LDd-RU-n47" firstAttribute="top" secondItem="sor-Jw-h9X" secondAttribute="bottom" constant="8" id="mhw-NZ-xrp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8rd-xJ-2pm" secondAttribute="bottom" constant="20" id="oKV-eb-6S4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7oK-fi-0eD" secondAttribute="trailing" constant="20" id="r1c-Uh-6Ey"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="UIWebViewSpinner" destination="hYI-4T-JBh" id="tWr-DU-51k"/>
+                        <outlet property="WKWebViewSpinner" destination="LVi-fV-Vlc" id="iyK-Bg-g58"/>
+                        <outlet property="btGo" destination="7oK-fi-0eD" id="DA6-EZ-dTI"/>
+                        <outlet property="txtAddress" destination="sor-Jw-h9X" id="tlK-3o-nVe"/>
+                        <outlet property="wkMain" destination="TSE-gt-uJf" id="m70-ov-7MB"/>
+                        <outlet property="wvMain" destination="8rd-xJ-2pm" id="Xak-X5-oNw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BRx-j5-LK2"/>
+            </objects>
+            <point key="canvasLocation" x="92.578125" y="135.9375"/>
+        </scene>
+    </scenes>
+</document>

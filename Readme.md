@@ -2,7 +2,7 @@
 This repository contains the iOS Objective-C source code for a sample browser app that uses the MAM SDKs for endpoint management.  It does not contain the [MAM SDK](https://docs.citrix.com/en-us/mdx-toolkit/mam-sdk-overview.html) libraries themselves, which are downloaded separately.
 
 ## Download
-The MAM SDK libraries can be downloaded from [MAM SDKs and Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/mam-sdk-overview.html).
+The MAM SDK libraries can be downloaded from [MAM SDKs and Toolkit](https://www.citrix.com/downloads/citrix-endpoint-management/product-software/mdx-toolkit.html).
 
 ## Documentation
 

@@ -50,9 +50,9 @@
     }
     else
     {
-        if(![strAddress hasPrefix:@"http"] && ![strAddress containsString:@"//:"])
+        if(![strAddress hasPrefix:@"https"] && ![strAddress containsString:@"://"])
         {
-            urlToFollow = [NSURL URLWithString:[@"http://" stringByAppendingString:strAddress]];
+            urlToFollow = [NSURL URLWithString:[@"https://" stringByAppendingString:strAddress]];
         }
         else
         {

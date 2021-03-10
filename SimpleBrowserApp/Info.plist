@@ -4,6 +4,11 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+	</dict>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -25,7 +30,7 @@
 			<string>com.citrix.SimpleBrowserApp</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.citrix.sso.ctxsimplebrowser</string>
+				<string>com.citrix.sso.7C1B0619-955F-4078-A4FB-443A52627D67</string>
 			</array>
 		</dict>
 	</array>
@@ -35,16 +40,16 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) camera use</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>$(PRODUCT_NAME) photo library use</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Your organization&apos;s policy requires your location for this app.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>$(PRODUCT_NAME) photo library addition</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>$(PRODUCT_NAME) photo library use</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Your organization&apos;s policy requires your location for this app.</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

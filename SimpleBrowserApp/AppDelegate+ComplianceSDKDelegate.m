@@ -24,9 +24,9 @@
         [alert addAction:action];
     }
     
-    /// TODO: Present this alert on a new window or any existing window...
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
+        AppDelegate *app =(AppDelegate *) [UIApplication sharedApplication].delegate;
+        UIViewController *topController = app.window.rootViewController;
         [topController presentViewController:alert animated:YES completion:nil];
     });
 }
@@ -104,7 +104,7 @@
     return YES;
 }
 
-#pragma mark -
+#pragma mark - Action Behaviors
 -(UIAlertAction*) quitButton
 {
     UIAlertAction *action = [UIAlertAction actionWithTitle:@"Quit"

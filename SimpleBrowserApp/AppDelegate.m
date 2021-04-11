@@ -79,166 +79,96 @@
 #pragma mark - Containment SDK
 - (void) handleContainmentNotification:(CTXMAMNotification *)notification
 {
-    if (notification.Error.code == CTXAlertGeofenceOutsideOfAcceptedArea ||
-        notification.Error.code == CTXAlertGeofenceLocationServicesRequired)
+    if (notification.Error.code == CTXAlertAppContainment_GEOFENCE_LocationServicesRequired ||
+        notification.Error.code == CTXAlertAppContainment_GEOFENCE_OutsideOfAcceptedArea)
     {
         // For these events, usage of the app may be restricted. They will be handled by delegate callback.
     }
     else
     {
         // For these events, just display a notification
-
         NSString *alertMsg = [notification Message];
-
         NSLog(@"CTXMAM Containment Notification: [%@]", alertMsg);
-
-        [self showAlertMsg:alertMsg];
+        [self showAlertMsg:alertMsg isFatal:NO];
     }
 }
 
 - (void) appIsOutsideGeofencingBoundary
 {
     NSString *alertMsg = @"You have left the area that your organization designates for this app. Please return to the designated area and relaunch the app.";
-    [self enforceAppUsageRestrictions:alertMsg];
+    [self showAlertMsg:alertMsg isFatal:YES];
 }
 
 - (void) appNeedsLocationServicesEnabled
 {
     NSString *alertMsg = @"Your organization requires you to enable Location Services to run this app.";
-    [self enforceAppUsageRestrictions:alertMsg];
+    [self showAlertMsg:alertMsg isFatal:YES];
 }
-
--(void)showAlertMsg:(NSString *)alertMsg
-{
-    UIAlertView *toast = [[UIAlertView alloc] initWithTitle:nil
-                                                    message:alertMsg
-                                                   delegate:nil
-                                          cancelButtonTitle:nil
-                                          otherButtonTitles:nil, nil];
-    [toast show];
-
-    int duration = 3; // duration in seconds
-    if ([alertMsg length] > 40)
-        duration = 5; // allow more time to read longer messages
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, duration * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        [toast dismissWithClickedButtonIndex:0 animated:YES];
-    });
-}
-
--(void)enforceAppUsageRestrictions:(NSString *)alertMsg
-{
-    UIAlertController * alert = [UIAlertController
-                                 alertControllerWithTitle:@""
-                                 message:alertMsg
-                                 preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction * quitButton = [UIAlertAction actionWithTitle:@"Quit"
-                                                          style:UIAlertActionStyleDestructive
-                                                        handler:^(UIAlertAction * action) {
-        id appdelegate =   [[UIApplication sharedApplication] delegate];
-        [appdelegate applicationWillTerminate:[UIApplication sharedApplication]];
-        exit(0); // terminate the app
-    }];
-    [alert addAction:quitButton];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
-        [topController presentViewController:alert animated:YES completion:nil];
-    });
-}
-
-
 
 #pragma mark - Local Auth SDK
-- (void) maxOfflinePeriodWillExceedWarning:(NSTimeInterval) secondsToExpire
+- (BOOL) maxOfflinePeriodWillExceedWarning:(NSTimeInterval) secondsToExpire
 {
     NSLog(@"Received maxOfflinePeriodWillExceedWarning");
-    NSString * alertTitle = @"Warning message from App:";
     NSString * alertMsg = [NSString stringWithFormat:@"Offline lease will expire in %f seconds. Please go online and login.", secondsToExpire];
-    UIAlertController * alert = [UIAlertController
-        alertControllerWithTitle:alertTitle
-                         message:alertMsg
-                  preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *actionOk = [UIAlertAction actionWithTitle:@"Ok"
-                                                       style:UIAlertActionStyleDefault
-                                                     handler:nil];
-    [alert addAction:actionOk];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
-        [topController presentViewController:alert animated:YES completion:nil];
-    });
+    [self showAlertMsg:alertMsg isFatal:NO];
+    return YES;
 }
 
-- (void) maxOfflinePeriodExceeded
+- (BOOL) maxOfflinePeriodExceeded
 {
     NSLog(@"Received maxOfflinePeriodExceeded");
-    NSString * alertTitle = @"Error message from App:";
     NSString * alertMsg = @"Offline lease has expired. Please login again.";
-    UIAlertController * alert = [UIAlertController
-        alertControllerWithTitle:alertTitle
-                         message:alertMsg
-                  preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction * quitButton = [UIAlertAction actionWithTitle:@"Quit"
-                                                       style:UIAlertActionStyleDestructive
-                                                     handler:^(UIAlertAction * action) {
-                                        NSLog(@"Application will terminate");
-                                        id appdelegate =   [[UIApplication sharedApplication] delegate];
-                                        [appdelegate applicationWillTerminate:[UIApplication sharedApplication]];
-                                        exit(0); // terminate the app
-                                    }];
-    [alert addAction:quitButton];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
-        [topController presentViewController:alert animated:YES completion:nil];
-    });
+    [self showAlertMsg:alertMsg isFatal:YES];
+    return YES;
 }
 
-- (void) devicePasscodeRequired
+- (BOOL) devicePasscodeRequired
 {
     NSLog(@"Received devicePasscodeRequired");
-    NSString * alertTitle = @"Error message from App:";
     NSString * alertMsg = @"Please set the device passcode and Touch ID/FaceID since it is required when Inactivity Timer expires.";
-    UIAlertController * alert = [UIAlertController
-        alertControllerWithTitle:alertTitle
-                         message:alertMsg
-                  preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction * quitButton = [UIAlertAction actionWithTitle:@"Quit"
-                                                       style:UIAlertActionStyleDestructive
-                                                     handler:^(UIAlertAction * action) {
-                                        NSLog(@"Application will terminate");
-                                        id appdelegate =   [[UIApplication sharedApplication] delegate];
-                                        [appdelegate applicationWillTerminate:[UIApplication sharedApplication]];
-                                        exit(0); // terminate the app
-                                    }];
-    [alert addAction:quitButton];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
-        [topController presentViewController:alert animated:YES completion:nil];
-    });
+    [self showAlertMsg:alertMsg isFatal:YES];
+    return YES;
 }
-
-
 
 #pragma mark - Core SDK
 - (void) proxyServerSettingDetected
 {
     NSLog(@"Received proxyServerSettingDetected");
-    NSString * alertTitle = @"Error message from App:";
     NSString * alertMsg = @"Proxy server setting is detected. The network request is stopped, since configuring a proxy server is not allowed.";
-    UIAlertController * alert = [UIAlertController
-        alertControllerWithTitle:alertTitle
-                         message:alertMsg
-                  preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction * quitButton = [UIAlertAction actionWithTitle:@"Quit"
-                                                       style:UIAlertActionStyleDestructive
-                                                     handler:^(UIAlertAction * action) {
-                                        NSLog(@"Application will terminate");
-                                        id appdelegate =   [[UIApplication sharedApplication] delegate];
-                                        [appdelegate applicationWillTerminate:[UIApplication sharedApplication]];
-                                        exit(0); // terminate the app
-                                    }];
-    [alert addAction:quitButton];
+    [self showAlertMsg:alertMsg isFatal:YES];
+}
+
+#pragma mark - Helper Method
+-(void)showAlertMsg:(NSString *)alertMsg isFatal:(BOOL)isFatal
+{
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
+        NSArray<__kindof UIWindow *> *windows = [UIApplication sharedApplication].windows;
+        UIWindow * keyWindow = windows.lastObject;
+        UIViewController *topController = keyWindow.rootViewController;
+
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Citrix Alert"
+                                                                       message:alertMsg
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        NSString *buttonText = nil;
+        if (isFatal) {
+            buttonText = NSLocalizedString(@"Quit", comment="");
+        } else {
+            buttonText = NSLocalizedString(@"OK", comment="");
+        }
+        
+        UIAlertAction* uiButton = [UIAlertAction actionWithTitle:buttonText
+                                                           style:UIAlertActionStyleDefault
+                                                         handler:^(UIAlertAction * action) {
+            if (isFatal) {
+                id appdelegate = [[UIApplication sharedApplication] delegate];
+                [appdelegate applicationWillTerminate:[UIApplication sharedApplication]];
+                exit(0); // terminate the app
+            }
+        }];
+         
+        [alert addAction:uiButton];
         [topController presentViewController:alert animated:YES completion:nil];
     });
 }
+
 @end

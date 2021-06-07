@@ -18,3 +18,8 @@ DerivedData
 *.ipa
 *.dSYM.zip
 *.dSYM
+
+# MAM SDK
+Frameworks/
+Tools/
+Data/

@@ -8,7 +8,7 @@ The MAM SDK libraries can be downloaded from [GitHub](https://github.com/citrix/
 
 For detailed documentation on how to use this sample app, and compile it, see the [MAM SDK for iOS and iPadOS Overview](https://developer.cloud.com/citrixworkspace/mobile-application-integration/mam-sdk-for-ios-and-ipados/docs/overview).  Documentation is also included in the MAM SDK download package.
 
-Note that some files need to be copied into the "Framework", "Tools", and "Data" folders from the iOS MAM SDK zip file.
+Note that some files need to be copied into the "Frameworks", "Tools", and "Data" folders from the iOS MAM SDK zip file.
 
 ## Questions
 

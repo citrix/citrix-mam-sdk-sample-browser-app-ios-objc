@@ -79,8 +79,8 @@
 #pragma mark - Containment SDK
 - (void) handleContainmentNotification:(CTXMAMNotification *)notification
 {
-    if (notification.Error.code == CTXAlertGeofenceOutsideOfAcceptedArea ||
-        notification.Error.code == CTXAlertGeofenceLocationServicesRequired)
+    if (notification.Error.code == CTXAlertAppContainment_GEOFENCE_OutsideOfAcceptedArea ||
+        notification.Error.code == CTXAlertAppContainment_GEOFENCE_LocationServicesRequired)
     {
         // For these events, usage of the app may be restricted. They will be handled by delegate callback.
     }

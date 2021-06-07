@@ -19,7 +19,11 @@ DerivedData
 *.dSYM.zip
 *.dSYM
 
+# IntelliJ
+.idea/
+SimpleBrowserApp.xcodeproj/.idea/
+
 # MAM SDK
-#Frameworks/
-#Tools/
-#Data/
+Frameworks/
+Tools/
+Data/

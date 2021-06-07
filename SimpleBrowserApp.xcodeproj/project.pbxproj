@@ -45,56 +45,7 @@
 		6E3D0AB422441DE00096198B /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AB222441DE00096198B /* AppIcon76x76.png */; };
 		6E560DE622F0BDA9005152F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE522F0BDA9005152F8 /* UIKit.framework */; };
 		6E560DE822F0BDB5005152F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE722F0BDB5005152F8 /* Foundation.framework */; };
-		9DAD345F2375136500E2DE30 /* AppDelegateComplianceOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAD345E2375136500E2DE30 /* AppDelegateComplianceOnly.m */; };
-		9DDBA4FC23CE494F0092C76C /* SceneDelegateComplianceOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA4F723CE38BB0092C76C /* SceneDelegateComplianceOnly.m */; };
-		9DDBA4FF23CE6D780092C76C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A432243E0240096198B /* ViewController.m */; };
-		9DDBA50023CE6D780092C76C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A4E2243E02D0096198B /* main.m */; };
-		9DDBA50123CE6D780092C76C /* AppDelegateComplianceOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAD345E2375136500E2DE30 /* AppDelegateComplianceOnly.m */; };
-		9DDBA50223CE6D780092C76C /* SceneDelegateComplianceOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA4F723CE38BB0092C76C /* SceneDelegateComplianceOnly.m */; };
-		9DDBA50423CE6D780092C76C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE722F0BDB5005152F8 /* Foundation.framework */; };
-		9DDBA50523CE6D780092C76C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE522F0BDA9005152F8 /* UIKit.framework */; };
-		9DDBA50623CE6D780092C76C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE0FD5F22E645220044ABC4 /* WebKit.framework */; };
-		9DDBA50B23CE6D780092C76C /* AppIcon83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9D22441CCB0096198B /* AppIcon83.5x83.5@2x.png */; };
-		9DDBA50C23CE6D780092C76C /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AB122441DE00096198B /* AppIcon60x60.png */; };
-		9DDBA50D23CE6D780092C76C /* AppIcon20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9E22441CCB0096198B /* AppIcon20x20@2x.png */; };
-		9DDBA50E23CE6D780092C76C /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9F22441CCB0096198B /* AppIcon40x40@2x.png */; };
-		9DDBA50F23CE6D780092C76C /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA522441CCB0096198B /* AppIcon29x29.png */; };
-		9DDBA51023CE6D780092C76C /* AppIcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA622441CCB0096198B /* AppIcon60x60@3x.png */; };
-		9DDBA51123CE6D780092C76C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A4A2243E02D0096198B /* LaunchScreen.storyboard */; };
-		9DDBA51223CE6D780092C76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A482243E02D0096198B /* Assets.xcassets */; };
-		9DDBA51323CE6D780092C76C /* AppIcon20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA322441CCB0096198B /* AppIcon20x20.png */; };
-		9DDBA51423CE6D780092C76C /* AppIcon40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA122441CCB0096198B /* AppIcon40x40@3x.png */; };
-		9DDBA51523CE6D780092C76C /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA222441CCB0096198B /* AppIcon76x76@2x.png */; };
-		9DDBA51623CE6D780092C76C /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AB222441DE00096198B /* AppIcon76x76.png */; };
-		9DDBA51723CE6D780092C76C /* AppIcon512x512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A96224417460096198B /* AppIcon512x512@2x.png */; };
-		9DDBA51823CE6D780092C76C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A452243E0240096198B /* Main.storyboard */; };
-		9DDBA51923CE6D780092C76C /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA422441CCB0096198B /* AppIcon29x29@3x.png */; };
-		9DDBA51A23CE6D780092C76C /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA022441CCB0096198B /* AppIcon29x29@2x.png */; };
-		9DDBA52723CE76480092C76C /* AppDelegate+UISceneSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA52623CE76480092C76C /* AppDelegate+UISceneSupport.m */; };
 		9DDBA55123D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */; };
-		9DDBA55223D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */; };
-		9DDBA55323D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */; };
-		9DE68E3723467B7100643B9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A432243E0240096198B /* ViewController.m */; };
-		9DE68E3823467B7100643B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A4E2243E02D0096198B /* main.m */; };
-		9DE68E3B23467B7100643B9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE722F0BDB5005152F8 /* Foundation.framework */; };
-		9DE68E3C23467B7100643B9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE522F0BDA9005152F8 /* UIKit.framework */; };
-		9DE68E3D23467B7100643B9A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE0FD5F22E645220044ABC4 /* WebKit.framework */; };
-		9DE68E4523467B7100643B9A /* AppIcon83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9D22441CCB0096198B /* AppIcon83.5x83.5@2x.png */; };
-		9DE68E4623467B7100643B9A /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AB122441DE00096198B /* AppIcon60x60.png */; };
-		9DE68E4723467B7100643B9A /* AppIcon20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9E22441CCB0096198B /* AppIcon20x20@2x.png */; };
-		9DE68E4823467B7100643B9A /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A9F22441CCB0096198B /* AppIcon40x40@2x.png */; };
-		9DE68E4923467B7100643B9A /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA522441CCB0096198B /* AppIcon29x29.png */; };
-		9DE68E4A23467B7100643B9A /* AppIcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA622441CCB0096198B /* AppIcon60x60@3x.png */; };
-		9DE68E4B23467B7100643B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A4A2243E02D0096198B /* LaunchScreen.storyboard */; };
-		9DE68E4C23467B7100643B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A482243E02D0096198B /* Assets.xcassets */; };
-		9DE68E4D23467B7100643B9A /* AppIcon20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA322441CCB0096198B /* AppIcon20x20.png */; };
-		9DE68E4E23467B7100643B9A /* AppIcon40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA122441CCB0096198B /* AppIcon40x40@3x.png */; };
-		9DE68E4F23467B7100643B9A /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA222441CCB0096198B /* AppIcon76x76@2x.png */; };
-		9DE68E5023467B7100643B9A /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AB222441DE00096198B /* AppIcon76x76.png */; };
-		9DE68E5123467B7100643B9A /* AppIcon512x512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A96224417460096198B /* AppIcon512x512@2x.png */; };
-		9DE68E5223467B7100643B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0A452243E0240096198B /* Main.storyboard */; };
-		9DE68E5323467B7100643B9A /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA422441CCB0096198B /* AppIcon29x29@3x.png */; };
-		9DE68E5423467B7100643B9A /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AA022441CCB0096198B /* AppIcon29x29@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,26 +79,6 @@
 				5D728BCE24B91FC400A5EF0E /* CTXMAMLocalAuth.xcframework in Embed Frameworks */,
 				5D728BD024B91FC600A5EF0E /* CTXMAMNetwork.xcframework in Embed Frameworks */,
 				5D728BCA24B91D7000A5EF0E /* CTXMAMCompliance.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DDBA51B23CE6D780092C76C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DE68E5523467B7100643B9A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,18 +126,10 @@
 		6E3D0AB222441DE00096198B /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon76x76.png; sourceTree = "<group>"; };
 		6E560DE522F0BDA9005152F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6E560DE722F0BDB5005152F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9DAD345E2375136500E2DE30 /* AppDelegateComplianceOnly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegateComplianceOnly.m; sourceTree = "<group>"; };
-		9DDBA4F623CE38BB0092C76C /* SceneDelegateComplianceOnly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegateComplianceOnly.h; sourceTree = "<group>"; };
-		9DDBA4F723CE38BB0092C76C /* SceneDelegateComplianceOnly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegateComplianceOnly.m; sourceTree = "<group>"; };
-		9DDBA52323CE6D780092C76C /* SimpleBrowserAppComplianceOnlyWithUIScene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBrowserAppComplianceOnlyWithUIScene.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DDBA52423CE6D780092C76C /* ComplianceOnlyWithUIScene-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ComplianceOnlyWithUIScene-Info.plist"; path = "/Users/Jagz/git/explicitsdks/TestApps/SimpleBrowserApp/ComplianceOnlyWithUIScene-Info.plist"; sourceTree = "<absolute>"; };
 		9DDBA52523CE76480092C76C /* AppDelegate+UISceneSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UISceneSupport.h"; sourceTree = "<group>"; };
 		9DDBA52623CE76480092C76C /* AppDelegate+UISceneSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UISceneSupport.m"; sourceTree = "<group>"; };
 		9DDBA54F23D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ComplianceSDKDelegate.h"; sourceTree = "<group>"; };
 		9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ComplianceSDKDelegate.m"; sourceTree = "<group>"; };
-		9DE68E6023467B7100643B9A /* SimpleBrowserAppComplianceOnly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBrowserAppComplianceOnly.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DE68E6123467B7100643B9A /* ComplianceOnly-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ComplianceOnly-Info.plist"; sourceTree = "<group>"; };
-		9DE68E672346CA8E00643B9A /* SimpleBrowserAppComplianceOnly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleBrowserAppComplianceOnly.entitlements; sourceTree = "<group>"; };
 		9DE68E682346CFCA00643B9A /* SimpleBrowserApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleBrowserApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,26 +165,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DDBA50323CE6D780092C76C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9DDBA50423CE6D780092C76C /* Foundation.framework in Frameworks */,
-				9DDBA50523CE6D780092C76C /* UIKit.framework in Frameworks */,
-				9DDBA50623CE6D780092C76C /* WebKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DE68E3A23467B7100643B9A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9DE68E3B23467B7100643B9A /* Foundation.framework in Frameworks */,
-				9DE68E3C23467B7100643B9A /* UIKit.framework in Frameworks */,
-				9DE68E3D23467B7100643B9A /* WebKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -292,8 +195,6 @@
 				6E3D0A3C2243E0240096198B /* Citrix Simple Browser.app */,
 				6E3D0A542243E02D0096198B /* SimpleBrowserAppTests.xctest */,
 				6E3D0A5F2243E02D0096198B /* SimpleBrowserAppUITests.xctest */,
-				9DE68E6023467B7100643B9A /* SimpleBrowserAppComplianceOnly.app */,
-				9DDBA52323CE6D780092C76C /* SimpleBrowserAppComplianceOnlyWithUIScene.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -302,24 +203,18 @@
 			isa = PBXGroup;
 			children = (
 				9DE68E682346CFCA00643B9A /* SimpleBrowserApp.entitlements */,
-				9DE68E672346CA8E00643B9A /* SimpleBrowserAppComplianceOnly.entitlements */,
 				6E3D0A3F2243E0240096198B /* AppDelegate.h */,
 				6E3D0A402243E0240096198B /* AppDelegate.m */,
-				9DAD345E2375136500E2DE30 /* AppDelegateComplianceOnly.m */,
 				9DDBA52523CE76480092C76C /* AppDelegate+UISceneSupport.h */,
 				9DDBA52623CE76480092C76C /* AppDelegate+UISceneSupport.m */,
 				9DDBA54F23D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.h */,
 				9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */,
-				9DDBA4F623CE38BB0092C76C /* SceneDelegateComplianceOnly.h */,
-				9DDBA4F723CE38BB0092C76C /* SceneDelegateComplianceOnly.m */,
 				6E3D0A422243E0240096198B /* ViewController.h */,
 				6E3D0A432243E0240096198B /* ViewController.m */,
 				6E3D0A452243E0240096198B /* Main.storyboard */,
 				6E3D0A482243E02D0096198B /* Assets.xcassets */,
 				6E3D0A4A2243E02D0096198B /* LaunchScreen.storyboard */,
 				6E3D0A4D2243E02D0096198B /* Info.plist */,
-				9DE68E6123467B7100643B9A /* ComplianceOnly-Info.plist */,
-				9DDBA52423CE6D780092C76C /* ComplianceOnlyWithUIScene-Info.plist */,
 				6E3D0A4E2243E02D0096198B /* main.m */,
 			);
 			path = SimpleBrowserApp;
@@ -446,44 +341,6 @@
 			productReference = 6E3D0A5F2243E02D0096198B /* SimpleBrowserAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		9DDBA4FD23CE6D780092C76C /* SimpleBrowserAppComplianceOnlyWithUIScene */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9DDBA52023CE6D780092C76C /* Build configuration list for PBXNativeTarget "SimpleBrowserAppComplianceOnlyWithUIScene" */;
-			buildPhases = (
-				9DDBA4FE23CE6D780092C76C /* Sources */,
-				9DDBA50323CE6D780092C76C /* Frameworks */,
-				9DDBA50A23CE6D780092C76C /* Resources */,
-				9DDBA51B23CE6D780092C76C /* Embed Frameworks */,
-				9DDBA51F23CE6D780092C76C /* Create MDX File */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SimpleBrowserAppComplianceOnlyWithUIScene;
-			productName = SimpleBrowserApp;
-			productReference = 9DDBA52323CE6D780092C76C /* SimpleBrowserAppComplianceOnlyWithUIScene.app */;
-			productType = "com.apple.product-type.application";
-		};
-		9DE68E3523467B7100643B9A /* SimpleBrowserAppComplianceOnly */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9DE68E5D23467B7100643B9A /* Build configuration list for PBXNativeTarget "SimpleBrowserAppComplianceOnly" */;
-			buildPhases = (
-				9DE68E3623467B7100643B9A /* Sources */,
-				9DE68E3A23467B7100643B9A /* Frameworks */,
-				9DE68E4423467B7100643B9A /* Resources */,
-				9DE68E5523467B7100643B9A /* Embed Frameworks */,
-				9DE68E5C23467B7100643B9A /* Create MDX File */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SimpleBrowserAppComplianceOnly;
-			productName = SimpleBrowserApp;
-			productReference = 9DE68E6023467B7100643B9A /* SimpleBrowserAppComplianceOnly.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -510,13 +367,6 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 6E3D0A3B2243E0240096198B;
 					};
-					9DE68E3523467B7100643B9A = {
-						SystemCapabilities = {
-							com.apple.Keychain = {
-								enabled = 1;
-							};
-						};
-					};
 				};
 			};
 			buildConfigurationList = 6E3D0A372243E0240096198B /* Build configuration list for PBXProject "SimpleBrowserApp" */;
@@ -535,8 +385,6 @@
 				6E3D0A3B2243E0240096198B /* SimpleBrowserApp */,
 				6E3D0A532243E02D0096198B /* SimpleBrowserAppTests */,
 				6E3D0A5E2243E02D0096198B /* SimpleBrowserAppUITests */,
-				9DE68E3523467B7100643B9A /* SimpleBrowserAppComplianceOnly */,
-				9DDBA4FD23CE6D780092C76C /* SimpleBrowserAppComplianceOnlyWithUIScene */,
 			);
 		};
 /* End PBXProject section */
@@ -579,52 +427,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DDBA50A23CE6D780092C76C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9DDBA50B23CE6D780092C76C /* AppIcon83.5x83.5@2x.png in Resources */,
-				9DDBA50C23CE6D780092C76C /* AppIcon60x60.png in Resources */,
-				9DDBA50D23CE6D780092C76C /* AppIcon20x20@2x.png in Resources */,
-				9DDBA50E23CE6D780092C76C /* AppIcon40x40@2x.png in Resources */,
-				9DDBA50F23CE6D780092C76C /* AppIcon29x29.png in Resources */,
-				9DDBA51023CE6D780092C76C /* AppIcon60x60@3x.png in Resources */,
-				9DDBA51123CE6D780092C76C /* LaunchScreen.storyboard in Resources */,
-				9DDBA51223CE6D780092C76C /* Assets.xcassets in Resources */,
-				9DDBA51323CE6D780092C76C /* AppIcon20x20.png in Resources */,
-				9DDBA51423CE6D780092C76C /* AppIcon40x40@3x.png in Resources */,
-				9DDBA51523CE6D780092C76C /* AppIcon76x76@2x.png in Resources */,
-				9DDBA51623CE6D780092C76C /* AppIcon76x76.png in Resources */,
-				9DDBA51723CE6D780092C76C /* AppIcon512x512@2x.png in Resources */,
-				9DDBA51823CE6D780092C76C /* Main.storyboard in Resources */,
-				9DDBA51923CE6D780092C76C /* AppIcon29x29@3x.png in Resources */,
-				9DDBA51A23CE6D780092C76C /* AppIcon29x29@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DE68E4423467B7100643B9A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9DE68E4523467B7100643B9A /* AppIcon83.5x83.5@2x.png in Resources */,
-				9DE68E4623467B7100643B9A /* AppIcon60x60.png in Resources */,
-				9DE68E4723467B7100643B9A /* AppIcon20x20@2x.png in Resources */,
-				9DE68E4823467B7100643B9A /* AppIcon40x40@2x.png in Resources */,
-				9DE68E4923467B7100643B9A /* AppIcon29x29.png in Resources */,
-				9DE68E4A23467B7100643B9A /* AppIcon60x60@3x.png in Resources */,
-				9DE68E4B23467B7100643B9A /* LaunchScreen.storyboard in Resources */,
-				9DE68E4C23467B7100643B9A /* Assets.xcassets in Resources */,
-				9DE68E4D23467B7100643B9A /* AppIcon20x20.png in Resources */,
-				9DE68E4E23467B7100643B9A /* AppIcon40x40@3x.png in Resources */,
-				9DE68E4F23467B7100643B9A /* AppIcon76x76@2x.png in Resources */,
-				9DE68E5023467B7100643B9A /* AppIcon76x76.png in Resources */,
-				9DE68E5123467B7100643B9A /* AppIcon512x512@2x.png in Resources */,
-				9DE68E5223467B7100643B9A /* Main.storyboard in Resources */,
-				9DE68E5323467B7100643B9A /* AppIcon29x29@3x.png in Resources */,
-				9DE68E5423467B7100643B9A /* AppIcon29x29@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -644,43 +446,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport STOREURL=\"http://yourstore.yourdomain.com\"\nexport APPTYPE=\"sdkapp\"\nexport PACKAGEID=\"7C1B0619-955F-4078-A4FB-443A52627D67\" # uuidgen\n#export PACKAGEID=\"\" #Please run uuidgen at the command line and paste the output value in the PACKAGEID variable\nexport APPIDPREFIX=\"YOUR_PREFIX_ID\"\nexport TOOLKIT_DIR=\"$PROJECT_DIR/../Tools\"\n\nif [ -z \"${PACKAGEID}\" ]\nthen\n    echo \"PACKAGEID variable was not found or was empty, please run uuidgen at the command line and paste the output value in the PACKAGEID variable in your post build script.\"\n    exit 1\nfi\n\nif [ -z \"${APPIDPREFIX}\" ]\nthen\n    echo \"APPIDPREFIX variable was not found or was empty, please refer to the \\\"how to\\\" document located in the documentation folder of the SDK package on where to find your Apple's application prefix ID.\"\nexit 1\nfi\nif [ ! -d $TOOLKIT_DIR/logs ]\nthen\n    mkdir $TOOLKIT_DIR/logs\nfi\n\n\n\"$TOOLKIT_DIR/CGAppCLPrepTool\" SdkPrep -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -storeURL \"${STOREURL}\" -appType \"${APPTYPE}\" -packageId \"${PACKAGEID}\" -entitlements \"$SRCROOT/$PROJECT/$PROJECT.entitlements\" -appIdPrefix \"${APPIDPREFIX}\" -minPlatform \"9.0\"\n\n#If you would like to embed your IPA file into the MDX file create the IPA file using the archiving feature of xcode and then use the following command to do so. \n#Provide IPA File Path\n#export IPA_FILE_PATH=\"\"\n#\"$TOOLKIT_DIR/CGAppCLPrepTool\" SetInfo -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\"  -embedBundle \"${IPA_FILE_PATH}\"\n";
-		};
-		9DDBA51F23CE6D780092C76C /* Create MDX File */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Create MDX File";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport STOREURL=\"http://yourstore.yourdomain.com\"\nexport APPTYPE=\"sdkapp\"\nexport PACKAGEID=\"7C1B0619-955F-4078-A4FB-443A52627D67\" # uuidgen\n#export PACKAGEID=\"\" #Please run uuidgen at the command line and paste the output value in the PACKAGEID variable\nexport APPIDPREFIX=\"NPB9J4KRXA\"\nexport TOOLKIT_DIR=\"$PROJECT_DIR/../Tools\"\n\nif [ -z \"${PACKAGEID}\" ]\nthen\n    echo \"PACKAGEID variable was not found or was empty, please run uuidgen at the command line and paste the output value in the PACKAGEID variable in your post build script.\"\n    exit 1\nfi\n\nif [ -z \"${APPIDPREFIX}\" ]\nthen\n    echo \"APPIDPREFIX variable was not found or was empty, please refer to the \\\"how to\\\" document located in the documentation folder of the SDK package on where to find your Apple's application prefix ID.\"\nexit 1\nfi\nif [! -d $TOOLKIT_DIR/logs ]\nthen\n    mkdir $TOOLKIT_DIR/logs\nfi\n\n\n\"$TOOLKIT_DIR/CGAppCLPrepTool\" SdkPrep -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -storeURL \"${STOREURL}\" -appType \"${APPTYPE}\" -packageId \"${PACKAGEID}\" -entitlements \"$SRCROOT/$PROJECT/$PROJECT.entitlements\" -appIdPrefix \"${APPIDPREFIX}\" -minPlatform \"9.0\"\n\n#If you would like to embed your IPA file into the MDX file create the IPA file using the archiving feature of xcode and then use the following command to do so. \n#Provide IPA File Path\n#export IPA_FILE_PATH=\"\"\n#\"$TOOLKIT_DIR/CGAppCLPrepTool\" SetInfo -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\"  -embedBundle \"${IPA_FILE_PATH}\"\n";
-		};
-		9DE68E5C23467B7100643B9A /* Create MDX File */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Create MDX File";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport STOREURL=\"http://yourstore.yourdomain.com\"\nexport APPTYPE=\"sdkapp\"\nexport PACKAGEID=\"7C1B0619-955F-4078-A4FB-443A52627D67\" # uuidgen\n#export PACKAGEID=\"\" #Please run uuidgen at the command line and paste the output value in the PACKAGEID variable\nexport APPIDPREFIX=\"NPB9J4KRXA\"\nexport TOOLKIT_DIR=\"$PROJECT_DIR/../Tools\"\n\nif [ -z \"${PACKAGEID}\" ]\nthen\n    echo \"PACKAGEID variable was not found or was empty, please run uuidgen at the command line and paste the output value in the PACKAGEID variable in your post build script.\"\n    exit 1\nfi\n\nif [ -z \"${APPIDPREFIX}\" ]\nthen\n    echo \"APPIDPREFIX variable was not found or was empty, please refer to the \\\"how to\\\" document located in the documentation folder of the SDK package on where to find your Apple's application prefix ID.\"\nexit 1\nfi\nif [! -d $TOOLKIT_DIR/logs ]\nthen\n    mkdir $TOOLKIT_DIR/logs\nfi\n\n\n\"$TOOLKIT_DIR/CGAppCLPrepTool\" SdkPrep -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -storeURL \"${STOREURL}\" -appType \"${APPTYPE}\" -packageId \"${PACKAGEID}\" -entitlements \"$SRCROOT/$PROJECT/$PROJECT.entitlements\" -appIdPrefix \"${APPIDPREFIX}\" -minPlatform \"9.0\"\n\n#If you would like to embed your IPA file into the MDX file create the IPA file using the archiving feature of xcode and then use the following command to do so. \n#Provide IPA File Path\n#export IPA_FILE_PATH=\"\"\n#\"$TOOLKIT_DIR/CGAppCLPrepTool\" SetInfo -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\"  -embedBundle \"${IPA_FILE_PATH}\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport STOREURL=\"http://yourstore.yourdomain.com\"\nexport APPTYPE=\"sdkapp\"\nexport PACKAGEID=\"7C1B0619-955F-4078-A4FB-443A52627D67\" # uuidgen\n#export PACKAGEID=\"\" #Please run uuidgen at the command line and paste the output value in the PACKAGEID variable\nexport APPIDPREFIX=\"YOUR_PREFIX_ID\"\nexport TOOLKIT_DIR=\"$PROJECT_DIR/Tools\"\n\nif [ -z \"${PACKAGEID}\" ]\nthen\n    echo \"PACKAGEID variable was not found or was empty, please run uuidgen at the command line and paste the output value in the PACKAGEID variable in your post build script.\"\n    exit 1\nfi\n\nif [ -z \"${APPIDPREFIX}\" ]\nthen\n    echo \"APPIDPREFIX variable was not found or was empty, please refer to the \\\"how to\\\" document located in the documentation folder of the SDK package on where to find your Apple's application prefix ID.\"\nexit 1\nfi\nif [ ! -d $TOOLKIT_DIR/logs ]\nthen\n    mkdir $TOOLKIT_DIR/logs\nfi\n\n\n\"$TOOLKIT_DIR/CGAppCLPrepTool\" SdkPrep -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -storeURL \"${STOREURL}\" -appType \"${APPTYPE}\" -packageId \"${PACKAGEID}\" -entitlements \"$SRCROOT/$PROJECT/$PROJECT.entitlements\" -appIdPrefix \"${APPIDPREFIX}\" -minPlatform \"9.0\"\n\n#If you would like to embed your IPA file into the MDX file create the IPA file using the archiving feature of xcode and then use the following command to do so. \n#Provide IPA File Path\n#export IPA_FILE_PATH=\"\"\n#\"$TOOLKIT_DIR/CGAppCLPrepTool\" SetInfo -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\"  -embedBundle \"${IPA_FILE_PATH}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -709,31 +475,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E3D0A642243E02D0096198B /* SimpleBrowserAppUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DDBA4FE23CE6D780092C76C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9DDBA4FF23CE6D780092C76C /* ViewController.m in Sources */,
-				9DDBA50023CE6D780092C76C /* main.m in Sources */,
-				9DDBA50123CE6D780092C76C /* AppDelegateComplianceOnly.m in Sources */,
-				9DDBA52723CE76480092C76C /* AppDelegate+UISceneSupport.m in Sources */,
-				9DDBA55323D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */,
-				9DDBA50223CE6D780092C76C /* SceneDelegateComplianceOnly.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DE68E3623467B7100643B9A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9DE68E3723467B7100643B9A /* ViewController.m in Sources */,
-				9DE68E3823467B7100643B9A /* main.m in Sources */,
-				9DDBA55223D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */,
-				9DAD345F2375136500E2DE30 /* AppDelegateComplianceOnly.m in Sources */,
-				9DDBA4FC23CE494F0092C76C /* SceneDelegateComplianceOnly.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,144 +771,6 @@
 			};
 			name = Release;
 		};
-		9DDBA52123CE6D780092C76C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = SimpleBrowserApp/SimpleBrowserAppComplianceOnly.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6PJY8ADY4;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/MdxCore.framework",
-					"$(PROJECT_DIR)/Frameworks/CitrixLogger.framework",
-					"$(PROJECT_DIR)/Frameworks/CTXMAMCompliance.framework",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-					COMPLIANCESDKONLY,
-				);
-				INFOPLIST_FILE = "ComplianceOnlyWithUIScene-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserApp.complianceonly;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBrowserApp/SimpleBrowserApp-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9DDBA52223CE6D780092C76C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = SimpleBrowserApp/SimpleBrowserAppComplianceOnly.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6PJY8ADY4;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/MdxCore.framework",
-					"$(PROJECT_DIR)/Frameworks/CitrixLogger.framework",
-					"$(PROJECT_DIR)/Frameworks/CTXMAMCompliance.framework",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = COMPLIANCESDKONLY;
-				INFOPLIST_FILE = "ComplianceOnlyWithUIScene-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserApp.complianceonly;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBrowserApp/SimpleBrowserApp-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		9DE68E5E23467B7100643B9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = SimpleBrowserApp/SimpleBrowserAppComplianceOnly.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6PJY8ADY4;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/MdxCore.framework",
-					"$(PROJECT_DIR)/Frameworks/CitrixLogger.framework",
-					"$(PROJECT_DIR)/Frameworks/CTXMAMCompliance.framework",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-					COMPLIANCESDKONLY,
-				);
-				INFOPLIST_FILE = "SimpleBrowserApp/ComplianceOnly-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserApp.complianceonly;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBrowserApp/SimpleBrowserApp-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9DE68E5F23467B7100643B9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = SimpleBrowserApp/SimpleBrowserAppComplianceOnly.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6PJY8ADY4;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/MdxCore.framework",
-					"$(PROJECT_DIR)/Frameworks/CitrixLogger.framework",
-					"$(PROJECT_DIR)/Frameworks/CTXMAMCompliance.framework",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = COMPLIANCESDKONLY;
-				INFOPLIST_FILE = "SimpleBrowserApp/ComplianceOnly-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserApp.complianceonly;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBrowserApp/SimpleBrowserApp-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1203,24 +806,6 @@
 			buildConfigurations = (
 				6E3D0A6F2243E02D0096198B /* Debug */,
 				6E3D0A702243E02D0096198B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9DDBA52023CE6D780092C76C /* Build configuration list for PBXNativeTarget "SimpleBrowserAppComplianceOnlyWithUIScene" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9DDBA52123CE6D780092C76C /* Debug */,
-				9DDBA52223CE6D780092C76C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9DE68E5D23467B7100643B9A /* Build configuration list for PBXNativeTarget "SimpleBrowserAppComplianceOnly" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9DE68E5E23467B7100643B9A /* Debug */,
-				9DE68E5F23467B7100643B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

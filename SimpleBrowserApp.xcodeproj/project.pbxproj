@@ -46,6 +46,7 @@
 		DEC8B752266EE8DC0080DEC9 /* CTXMAMLocalAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73F266EE8BF0080DEC9 /* CTXMAMLocalAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DEC8B753266EE8DE0080DEC9 /* CTXMAMNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73B266EE8BF0080DEC9 /* CTXMAMNetwork.xcframework */; };
 		DEC8B754266EE8DE0080DEC9 /* CTXMAMNetwork.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73B266EE8BF0080DEC9 /* CTXMAMNetwork.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEFA97D1266EEBF700940927 /* CitrixMamSdkLog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEFA97D0266EEBF700940927 /* CitrixMamSdkLog.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 		DEC8B73E266EE8BF0080DEC9 /* CTXMAMCompliance.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CTXMAMCompliance.xcframework; sourceTree = "<group>"; };
 		DEC8B73F266EE8BF0080DEC9 /* CTXMAMLocalAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CTXMAMLocalAuth.xcframework; sourceTree = "<group>"; };
 		DEC8B740266EE8BF0080DEC9 /* CTXMAMContainment.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CTXMAMContainment.xcframework; sourceTree = "<group>"; };
+		DEFA97D0266EEBF700940927 /* CitrixMamSdkLog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CitrixMamSdkLog.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 		6E3D0A8D2244128A0096198B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DEFA97D0266EEBF700940927 /* CitrixMamSdkLog.jpg */,
 				6E3D0A8E224412970096198B /* Icons */,
 			);
 			path = Resources;
@@ -406,6 +409,7 @@
 				6E3D0AAB22441CCB0096198B /* AppIcon40x40@3x.png in Resources */,
 				6E3D0AAC22441CCB0096198B /* AppIcon76x76@2x.png in Resources */,
 				6E3D0AB422441DE00096198B /* AppIcon76x76.png in Resources */,
+				DEFA97D1266EEBF700940927 /* CitrixMamSdkLog.jpg in Resources */,
 				6E3D0A9C224417460096198B /* AppIcon512x512@2x.png in Resources */,
 				6E3D0A472243E0240096198B /* Main.storyboard in Resources */,
 				6E3D0AAE22441CCB0096198B /* AppIcon29x29@3x.png in Resources */,

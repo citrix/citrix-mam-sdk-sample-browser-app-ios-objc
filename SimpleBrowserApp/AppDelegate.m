@@ -47,7 +47,7 @@
     [CTXMAMCore setDelegate:self];
 
     [CTXMAMCore initializeSDKsWithCompletionBlock:^(NSError * _Nullable nilOrError) {
-        if(nilOrError) {
+        if (nilOrError) {
             NSLog(@"Error initializing SDKs -> %@", nilOrError);
         }
     }];

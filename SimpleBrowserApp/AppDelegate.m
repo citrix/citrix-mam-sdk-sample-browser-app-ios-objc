@@ -46,7 +46,11 @@
     [CTXMAMContainment setDelegate:self];
     [CTXMAMCore setDelegate:self];
 
-    [CTXMAMCore initializeSDKs];
+    [CTXMAMCore initializeSDKsWithCompletionBlock:^(NSError * _Nullable nilOrError) {
+        if (nilOrError) {
+            NSLog(@"Error initializing SDKs -> %@", nilOrError);
+        }
+    }];
 
     return YES;
 }
@@ -93,16 +97,20 @@
     }
 }
 
-- (void) appIsOutsideGeofencingBoundary
+- (BOOL) appIsOutsideGeofencingBoundaryWithDefaultHandlerOption
 {
     NSString *alertMsg = @"You have left the area that your organization designates for this app. Please return to the designated area and relaunch the app.";
     [self showAlertMsg:alertMsg isFatal:YES];
+    
+    return YES;
 }
 
-- (void) appNeedsLocationServicesEnabled
+- (BOOL) appNeedsLocationServicesEnabledWithDefaultHandlerOption
 {
     NSString *alertMsg = @"Your organization requires you to enable Location Services to run this app.";
     [self showAlertMsg:alertMsg isFatal:YES];
+    
+    return YES;
 }
 
 #pragma mark - Local Auth SDK
@@ -131,11 +139,13 @@
 }
 
 #pragma mark - Core SDK
-- (void) proxyServerSettingDetected
+- (BOOL) proxyServerSettingDetectedWithDefaultHandlerOption
 {
     NSLog(@"Received proxyServerSettingDetected");
     NSString * alertMsg = @"Proxy server setting is detected. The network request is stopped, since configuring a proxy server is not allowed.";
     [self showAlertMsg:alertMsg isFatal:YES];
+    
+    return YES;
 }
 
 #pragma mark - Helper Method

@@ -52,7 +52,14 @@
 
     [CTXMAMCore initializeSDKsWithCompletionBlock:^(NSError * _Nullable nilOrError) {
         if (nilOrError) {
-            NSLog(@"Error initializing SDKs -> %@", nilOrError);
+            NSString * alertMsg = [NSString stringWithFormat:@"Error initializing SDKs -> %@", nilOrError];
+            NSLog(alertMsg);
+            [self showAlertMsg:alertMsg isFatal:NO];
+        }
+        else {
+            NSLog(@"Received sdksInitializedAndReady");
+            NSString * alertMsg = [NSString stringWithFormat:@"SDKs initialized and ready for use."];
+            [self showAlertMsg:alertMsg isFatal:NO];
         }
     }];
 
@@ -195,13 +202,6 @@
     
     return YES;
 }
-
-- (void) sdksInitializedAndReady:(BOOL)online
- {
-     NSLog(@"Received sdksInitializedAndReady");
-     NSString * alertMsg = [NSString stringWithFormat:@"SDKs initialized and ready for use. User online status - %d.", online];
-     [self showAlertMsg:alertMsg isFatal:NO];
- }
 
 #pragma mark - Helper Method
 -(void)showAlertMsg:(NSString *)alertMsg isFatal:(BOOL)isFatal

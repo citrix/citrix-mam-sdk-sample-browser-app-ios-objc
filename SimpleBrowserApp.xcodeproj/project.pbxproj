@@ -3,24 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D728BB524B8FCF200A5EF0E /* CitrixLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAA24B8FCC500A5EF0E /* CitrixLogger.framework */; };
-		5D728BB624B8FCF200A5EF0E /* CitrixLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAA24B8FCC500A5EF0E /* CitrixLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D728BB724B8FCF500A5EF0E /* CTXMAMAppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BA924B8FCC400A5EF0E /* CTXMAMAppCore.framework */; };
-		5D728BB824B8FCF500A5EF0E /* CTXMAMAppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BA924B8FCC400A5EF0E /* CTXMAMAppCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D728BBD24B8FCFF00A5EF0E /* CTXMAMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAD24B8FCC500A5EF0E /* CTXMAMCore.framework */; };
-		5D728BBE24B8FCFF00A5EF0E /* CTXMAMCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAD24B8FCC500A5EF0E /* CTXMAMCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D728BC924B91D7000A5EF0E /* CTXMAMCompliance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAB24B8FCC500A5EF0E /* CTXMAMCompliance.framework */; };
-		5D728BCA24B91D7000A5EF0E /* CTXMAMCompliance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAB24B8FCC500A5EF0E /* CTXMAMCompliance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D728BCB24B91FC000A5EF0E /* CTXMAMContainment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BA824B8FCC400A5EF0E /* CTXMAMContainment.framework */; };
-		5D728BCC24B91FC000A5EF0E /* CTXMAMContainment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BA824B8FCC400A5EF0E /* CTXMAMContainment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D728BCD24B91FC300A5EF0E /* CTXMAMLocalAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E41201235F7CB000CA52EE /* CTXMAMLocalAuth.framework */; };
-		5D728BCE24B91FC400A5EF0E /* CTXMAMLocalAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34E41201235F7CB000CA52EE /* CTXMAMLocalAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5D728BCF24B91FC600A5EF0E /* CTXMAMNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAC24B8FCC500A5EF0E /* CTXMAMNetwork.framework */; };
-		5D728BD024B91FC600A5EF0E /* CTXMAMNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D728BAC24B8FCC500A5EF0E /* CTXMAMNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5DE0FD6022E645230044ABC4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE0FD5F22E645220044ABC4 /* WebKit.framework */; };
 		6E3D0A412243E0240096198B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A402243E0240096198B /* AppDelegate.m */; };
 		6E3D0A442243E0240096198B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D0A432243E0240096198B /* ViewController.m */; };
@@ -46,6 +32,21 @@
 		6E560DE622F0BDA9005152F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE522F0BDA9005152F8 /* UIKit.framework */; };
 		6E560DE822F0BDB5005152F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE722F0BDB5005152F8 /* Foundation.framework */; };
 		9DDBA55123D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */; };
+		DEC8B747266EE8D60080DEC9 /* CitrixLogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B739266EE8A60080DEC9 /* CitrixLogger.xcframework */; };
+		DEC8B748266EE8D60080DEC9 /* CitrixLogger.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B739266EE8A60080DEC9 /* CitrixLogger.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEC8B749266EE8D70080DEC9 /* CTXMAMAppCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73C266EE8BF0080DEC9 /* CTXMAMAppCore.xcframework */; };
+		DEC8B74A266EE8D70080DEC9 /* CTXMAMAppCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73C266EE8BF0080DEC9 /* CTXMAMAppCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEC8B74B266EE8D90080DEC9 /* CTXMAMCompliance.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73E266EE8BF0080DEC9 /* CTXMAMCompliance.xcframework */; };
+		DEC8B74C266EE8D90080DEC9 /* CTXMAMCompliance.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73E266EE8BF0080DEC9 /* CTXMAMCompliance.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEC8B74D266EE8DA0080DEC9 /* CTXMAMContainment.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B740266EE8BF0080DEC9 /* CTXMAMContainment.xcframework */; };
+		DEC8B74E266EE8DA0080DEC9 /* CTXMAMContainment.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B740266EE8BF0080DEC9 /* CTXMAMContainment.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEC8B74F266EE8DB0080DEC9 /* CTXMAMCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73D266EE8BF0080DEC9 /* CTXMAMCore.xcframework */; };
+		DEC8B750266EE8DB0080DEC9 /* CTXMAMCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73D266EE8BF0080DEC9 /* CTXMAMCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEC8B751266EE8DC0080DEC9 /* CTXMAMLocalAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73F266EE8BF0080DEC9 /* CTXMAMLocalAuth.xcframework */; };
+		DEC8B752266EE8DC0080DEC9 /* CTXMAMLocalAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73F266EE8BF0080DEC9 /* CTXMAMLocalAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEC8B753266EE8DE0080DEC9 /* CTXMAMNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73B266EE8BF0080DEC9 /* CTXMAMNetwork.xcframework */; };
+		DEC8B754266EE8DE0080DEC9 /* CTXMAMNetwork.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73B266EE8BF0080DEC9 /* CTXMAMNetwork.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEFA97D1266EEBF700940927 /* CitrixMamSdkLog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEFA97D0266EEBF700940927 /* CitrixMamSdkLog.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,13 +73,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5D728BB624B8FCF200A5EF0E /* CitrixLogger.framework in Embed Frameworks */,
-				5D728BB824B8FCF500A5EF0E /* CTXMAMAppCore.framework in Embed Frameworks */,
-				5D728BBE24B8FCFF00A5EF0E /* CTXMAMCore.framework in Embed Frameworks */,
-				5D728BCC24B91FC000A5EF0E /* CTXMAMContainment.framework in Embed Frameworks */,
-				5D728BCE24B91FC400A5EF0E /* CTXMAMLocalAuth.framework in Embed Frameworks */,
-				5D728BD024B91FC600A5EF0E /* CTXMAMNetwork.framework in Embed Frameworks */,
-				5D728BCA24B91D7000A5EF0E /* CTXMAMCompliance.framework in Embed Frameworks */,
+				DEC8B74C266EE8D90080DEC9 /* CTXMAMCompliance.xcframework in Embed Frameworks */,
+				DEC8B754266EE8DE0080DEC9 /* CTXMAMNetwork.xcframework in Embed Frameworks */,
+				DEC8B752266EE8DC0080DEC9 /* CTXMAMLocalAuth.xcframework in Embed Frameworks */,
+				DEC8B750266EE8DB0080DEC9 /* CTXMAMCore.xcframework in Embed Frameworks */,
+				DEC8B74A266EE8D70080DEC9 /* CTXMAMAppCore.xcframework in Embed Frameworks */,
+				DEC8B74E266EE8DA0080DEC9 /* CTXMAMContainment.xcframework in Embed Frameworks */,
+				DEC8B748266EE8D60080DEC9 /* CitrixLogger.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,13 +87,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		34E41201235F7CB000CA52EE /* CTXMAMLocalAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTXMAMLocalAuth.framework; sourceTree = "<group>"; };
-		5D728BA824B8FCC400A5EF0E /* CTXMAMContainment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTXMAMContainment.framework; sourceTree = "<group>"; };
-		5D728BA924B8FCC400A5EF0E /* CTXMAMAppCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTXMAMAppCore.framework; sourceTree = "<group>"; };
-		5D728BAA24B8FCC500A5EF0E /* CitrixLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CitrixLogger.framework; sourceTree = "<group>"; };
-		5D728BAB24B8FCC500A5EF0E /* CTXMAMCompliance.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTXMAMCompliance.framework; sourceTree = "<group>"; };
-		5D728BAC24B8FCC500A5EF0E /* CTXMAMNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTXMAMNetwork.framework; sourceTree = "<group>"; };
-		5D728BAD24B8FCC500A5EF0E /* CTXMAMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTXMAMCore.framework; sourceTree = "<group>"; };
 		5D728BC324B8FDF200A5EF0E /* CGAppCLPrepTool */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = CGAppCLPrepTool; path = ../Tools/CGAppCLPrepTool; sourceTree = "<group>"; };
 		5DE0FD5F22E645220044ABC4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6E3D0A3C2243E0240096198B /* Citrix Simple Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citrix Simple Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +125,14 @@
 		9DDBA54F23D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ComplianceSDKDelegate.h"; sourceTree = "<group>"; };
 		9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ComplianceSDKDelegate.m"; sourceTree = "<group>"; };
 		9DE68E682346CFCA00643B9A /* SimpleBrowserApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleBrowserApp.entitlements; sourceTree = "<group>"; };
+		DEC8B739266EE8A60080DEC9 /* CitrixLogger.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CitrixLogger.xcframework; sourceTree = "<group>"; };
+		DEC8B73B266EE8BF0080DEC9 /* CTXMAMNetwork.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CTXMAMNetwork.xcframework; sourceTree = "<group>"; };
+		DEC8B73C266EE8BF0080DEC9 /* CTXMAMAppCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CTXMAMAppCore.xcframework; sourceTree = "<group>"; };
+		DEC8B73D266EE8BF0080DEC9 /* CTXMAMCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CTXMAMCore.xcframework; sourceTree = "<group>"; };
+		DEC8B73E266EE8BF0080DEC9 /* CTXMAMCompliance.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CTXMAMCompliance.xcframework; sourceTree = "<group>"; };
+		DEC8B73F266EE8BF0080DEC9 /* CTXMAMLocalAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CTXMAMLocalAuth.xcframework; sourceTree = "<group>"; };
+		DEC8B740266EE8BF0080DEC9 /* CTXMAMContainment.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CTXMAMContainment.xcframework; sourceTree = "<group>"; };
+		DEFA97D0266EEBF700940927 /* CitrixMamSdkLog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CitrixMamSdkLog.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,16 +140,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC8B747266EE8D60080DEC9 /* CitrixLogger.xcframework in Frameworks */,
+				DEC8B74B266EE8D90080DEC9 /* CTXMAMCompliance.xcframework in Frameworks */,
+				DEC8B74D266EE8DA0080DEC9 /* CTXMAMContainment.xcframework in Frameworks */,
 				6E560DE822F0BDB5005152F8 /* Foundation.framework in Frameworks */,
-				5D728BCF24B91FC600A5EF0E /* CTXMAMNetwork.framework in Frameworks */,
-				5D728BCB24B91FC000A5EF0E /* CTXMAMContainment.framework in Frameworks */,
+				DEC8B74F266EE8DB0080DEC9 /* CTXMAMCore.xcframework in Frameworks */,
 				6E560DE622F0BDA9005152F8 /* UIKit.framework in Frameworks */,
+				DEC8B753266EE8DE0080DEC9 /* CTXMAMNetwork.xcframework in Frameworks */,
+				DEC8B751266EE8DC0080DEC9 /* CTXMAMLocalAuth.xcframework in Frameworks */,
+				DEC8B749266EE8D70080DEC9 /* CTXMAMAppCore.xcframework in Frameworks */,
 				5DE0FD6022E645230044ABC4 /* WebKit.framework in Frameworks */,
-				5D728BCD24B91FC300A5EF0E /* CTXMAMLocalAuth.framework in Frameworks */,
-				5D728BB724B8FCF500A5EF0E /* CTXMAMAppCore.framework in Frameworks */,
-				5D728BC924B91D7000A5EF0E /* CTXMAMCompliance.framework in Frameworks */,
-				5D728BB524B8FCF200A5EF0E /* CitrixLogger.framework in Frameworks */,
-				5D728BBD24B8FCFF00A5EF0E /* CTXMAMCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,13 +243,13 @@
 		6E3D0A7E22440C8E0096198B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D728BAA24B8FCC500A5EF0E /* CitrixLogger.framework */,
-				5D728BA924B8FCC400A5EF0E /* CTXMAMAppCore.framework */,
-				5D728BAB24B8FCC500A5EF0E /* CTXMAMCompliance.framework */,
-				5D728BA824B8FCC400A5EF0E /* CTXMAMContainment.framework */,
-				5D728BAD24B8FCC500A5EF0E /* CTXMAMCore.framework */,
-				34E41201235F7CB000CA52EE /* CTXMAMLocalAuth.framework */,
-				5D728BAC24B8FCC500A5EF0E /* CTXMAMNetwork.framework */,
+				DEC8B73C266EE8BF0080DEC9 /* CTXMAMAppCore.xcframework */,
+				DEC8B73E266EE8BF0080DEC9 /* CTXMAMCompliance.xcframework */,
+				DEC8B740266EE8BF0080DEC9 /* CTXMAMContainment.xcframework */,
+				DEC8B73D266EE8BF0080DEC9 /* CTXMAMCore.xcframework */,
+				DEC8B73F266EE8BF0080DEC9 /* CTXMAMLocalAuth.xcframework */,
+				DEC8B73B266EE8BF0080DEC9 /* CTXMAMNetwork.xcframework */,
+				DEC8B739266EE8A60080DEC9 /* CitrixLogger.xcframework */,
 				6E560DE722F0BDB5005152F8 /* Foundation.framework */,
 				6E560DE522F0BDA9005152F8 /* UIKit.framework */,
 				5DE0FD5F22E645220044ABC4 /* WebKit.framework */,
@@ -258,6 +260,7 @@
 		6E3D0A8D2244128A0096198B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DEFA97D0266EEBF700940927 /* CitrixMamSdkLog.jpg */,
 				6E3D0A8E224412970096198B /* Icons */,
 			);
 			path = Resources;
@@ -406,6 +409,7 @@
 				6E3D0AAB22441CCB0096198B /* AppIcon40x40@3x.png in Resources */,
 				6E3D0AAC22441CCB0096198B /* AppIcon76x76@2x.png in Resources */,
 				6E3D0AB422441DE00096198B /* AppIcon76x76.png in Resources */,
+				DEFA97D1266EEBF700940927 /* CitrixMamSdkLog.jpg in Resources */,
 				6E3D0A9C224417460096198B /* AppIcon512x512@2x.png in Resources */,
 				6E3D0A472243E0240096198B /* Main.storyboard in Resources */,
 				6E3D0AAE22441CCB0096198B /* AppIcon29x29@3x.png in Resources */,
@@ -446,7 +450,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport STOREURL=\"http://yourstore.yourdomain.com\"\nexport APPTYPE=\"sdkapp\"\nexport PACKAGEID=\"7C1B0619-955F-4078-A4FB-443A52627D67\" # uuidgen\n#export PACKAGEID=\"\" #Please run uuidgen at the command line and paste the output value in the PACKAGEID variable\nexport APPIDPREFIX=\"NPB9J4KRXA\"\nexport TOOLKIT_DIR=\"$PROJECT_DIR/Tools\"\n\nif [ -z \"${PACKAGEID}\" ]\nthen\n    echo \"PACKAGEID variable was not found or was empty, please run uuidgen at the command line and paste the output value in the PACKAGEID variable in your post build script.\"\n    exit 1\nfi\n\nif [ -z \"${APPIDPREFIX}\" ]\nthen\n    echo \"APPIDPREFIX variable was not found or was empty, please refer to the \\\"how to\\\" document located in the documentation folder of the SDK package on where to find your Apple's application prefix ID.\"\nexit 1\nfi\nif [! -d $TOOLKIT_DIR/logs ]\nthen\n    mkdir $TOOLKIT_DIR/logs\nfi\n\n\n\"$TOOLKIT_DIR/CGAppCLPrepTool\" SdkPrep -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -storeURL \"${STOREURL}\" -appType \"${APPTYPE}\" -packageId \"${PACKAGEID}\" -entitlements \"$SRCROOT/$PROJECT/$PROJECT.entitlements\" -appIdPrefix \"${APPIDPREFIX}\" -minPlatform \"9.0\"\n\n#If you would like to embed your IPA file into the MDX file create the IPA file using the archiving feature of xcode and then use the following command to do so. \n#Provide IPA File Path\n#export IPA_FILE_PATH=\"\"\n#\"$TOOLKIT_DIR/CGAppCLPrepTool\" SetInfo -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\"  -embedBundle \"${IPA_FILE_PATH}\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport STOREURL=\"http://yourstore.yourdomain.com\"\nexport APPTYPE=\"sdkapp\"\nexport PACKAGEID=\"7C1B0619-955F-4078-A4FB-443A52627D67\" # uuidgen\n#export PACKAGEID=\"\" #Please run uuidgen at the command line and paste the output value in the PACKAGEID variable\nexport APPIDPREFIX=\"YOUR_PREFIX_ID\"\nexport TOOLKIT_DIR=\"$PROJECT_DIR/Tools\"\n\nif [ -z \"${PACKAGEID}\" ]\nthen\n    echo \"PACKAGEID variable was not found or was empty, please run uuidgen at the command line and paste the output value in the PACKAGEID variable in your post build script.\"\n    exit 1\nfi\n\nif [ -z \"${APPIDPREFIX}\" ]\nthen\n    echo \"APPIDPREFIX variable was not found or was empty, please refer to the \\\"how to\\\" document located in the documentation folder of the SDK package on where to find your Apple's application prefix ID.\"\nexit 1\nfi\nif [ ! -d $TOOLKIT_DIR/logs ]\nthen\n    mkdir $TOOLKIT_DIR/logs\nfi\n\n\n\"$TOOLKIT_DIR/CGAppCLPrepTool\" SdkPrep -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -storeURL \"${STOREURL}\" -appType \"${APPTYPE}\" -packageId \"${PACKAGEID}\" -entitlements \"$SRCROOT/$PROJECT/$PROJECT.entitlements\" -appIdPrefix \"${APPIDPREFIX}\" -minPlatform \"9.0\"\n\n#If you would like to embed your IPA file into the MDX file create the IPA file using the archiving feature of xcode and then use the following command to do so. \n#Provide IPA File Path\n#export IPA_FILE_PATH=\"\"\n#\"$TOOLKIT_DIR/CGAppCLPrepTool\" SetInfo -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\"  -embedBundle \"${IPA_FILE_PATH}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -569,7 +573,6 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -623,7 +626,6 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -636,7 +638,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = LKQN7JYQXV;
+				DEVELOPMENT_TEAM = NPB9J4KRXA;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -672,7 +674,7 @@
 				CODE_SIGN_ENTITLEMENTS = SimpleBrowserApp/SimpleBrowserApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LKQN7JYQXV;
+				DEVELOPMENT_TEAM = NPB9J4KRXA;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

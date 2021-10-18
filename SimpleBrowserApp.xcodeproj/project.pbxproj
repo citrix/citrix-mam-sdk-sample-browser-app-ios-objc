@@ -31,7 +31,6 @@
 		6E3D0AB422441DE00096198B /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D0AB222441DE00096198B /* AppIcon76x76.png */; };
 		6E560DE622F0BDA9005152F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE522F0BDA9005152F8 /* UIKit.framework */; };
 		6E560DE822F0BDB5005152F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E560DE722F0BDB5005152F8 /* Foundation.framework */; };
-		9DDBA55123D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */; };
 		DEC8B747266EE8D60080DEC9 /* CitrixLogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B739266EE8A60080DEC9 /* CitrixLogger.xcframework */; };
 		DEC8B748266EE8D60080DEC9 /* CitrixLogger.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B739266EE8A60080DEC9 /* CitrixLogger.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DEC8B749266EE8D70080DEC9 /* CTXMAMAppCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC8B73C266EE8BF0080DEC9 /* CTXMAMAppCore.xcframework */; };
@@ -122,8 +121,6 @@
 		6E560DE722F0BDB5005152F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9DDBA52523CE76480092C76C /* AppDelegate+UISceneSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UISceneSupport.h"; sourceTree = "<group>"; };
 		9DDBA52623CE76480092C76C /* AppDelegate+UISceneSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UISceneSupport.m"; sourceTree = "<group>"; };
-		9DDBA54F23D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+ComplianceSDKDelegate.h"; sourceTree = "<group>"; };
-		9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+ComplianceSDKDelegate.m"; sourceTree = "<group>"; };
 		9DE68E682346CFCA00643B9A /* SimpleBrowserApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleBrowserApp.entitlements; sourceTree = "<group>"; };
 		DEC8B739266EE8A60080DEC9 /* CitrixLogger.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CitrixLogger.xcframework; sourceTree = "<group>"; };
 		DEC8B73B266EE8BF0080DEC9 /* CTXMAMNetwork.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CTXMAMNetwork.xcframework; sourceTree = "<group>"; };
@@ -209,8 +206,6 @@
 				6E3D0A402243E0240096198B /* AppDelegate.m */,
 				9DDBA52523CE76480092C76C /* AppDelegate+UISceneSupport.h */,
 				9DDBA52623CE76480092C76C /* AppDelegate+UISceneSupport.m */,
-				9DDBA54F23D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.h */,
-				9DDBA55023D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m */,
 				6E3D0A422243E0240096198B /* ViewController.h */,
 				6E3D0A432243E0240096198B /* ViewController.m */,
 				6E3D0A452243E0240096198B /* Main.storyboard */,
@@ -462,7 +457,6 @@
 				6E3D0A442243E0240096198B /* ViewController.m in Sources */,
 				6E3D0A4F2243E02D0096198B /* main.m in Sources */,
 				6E3D0A412243E0240096198B /* AppDelegate.m in Sources */,
-				9DDBA55123D8C7340092C76C /* AppDelegate+ComplianceSDKDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

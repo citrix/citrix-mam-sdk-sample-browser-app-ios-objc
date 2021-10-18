@@ -10,12 +10,8 @@
 #import <CTXMAMCore/CTXMAMCore.h>
 #import <CTXMAMNetwork/CTXMAMNetwork.h>
 #import <CTXMAMContainment/CTXMAMContainment.h>
-#import <CTXMAMLocalAuth/CTXMAMLocalAuth.h>
-#import "AppDelegate+ComplianceSDKDelegate.h"
 
-@interface AppDelegate () <CTXMAMLocalAuthSdkDelegate,
-                           CTXMAMContainmentSdkDelegate,
-                           CTXMAMCoreSdkDelegate>
+@interface AppDelegate () <CTXMAMCoreSdkDelegate>
 @end
 
 @implementation AppDelegate
@@ -44,21 +40,17 @@
         }
     };
     [[CTXMAMNotificationCenter mainNotificationCenter] registerForNotificationsFromSource:CTXMAMNotificationSource_All usingNotificationBlock:notificationHandler];
-    
-    [CTXMAMLocalAuth setDelegate:self];
-    [CTXMAMCompliance sharedInstance].delegate = self;
-    [CTXMAMContainment setDelegate:self];
     [CTXMAMCore setDelegate:self];
 
     [CTXMAMCore initializeSDKsWithCompletionBlock:^(NSError * _Nullable nilOrError) {
         if (nilOrError) {
             NSString * alertMsg = [NSString stringWithFormat:@"Error initializing SDKs -> %@", nilOrError];
-            NSLog(alertMsg);
+            NSLog(@"%@", alertMsg);
             [self showAlertMsg:alertMsg isFatal:NO];
         }
         else {
-            NSLog(@"Received sdksInitializedAndReady");
             NSString * alertMsg = [NSString stringWithFormat:@"SDKs initialized and ready for use."];
+            NSLog(@"%@", alertMsg);
             [self showAlertMsg:alertMsg isFatal:NO];
         }
     }];
@@ -128,22 +120,6 @@
      }
 }
 
-- (BOOL) appIsOutsideGeofencingBoundaryWithDefaultHandlerOption
-{
-    NSString *alertMsg = @"You have left the area that your organization designates for this app. Please return to the designated area and relaunch the app.";
-    [self showAlertMsg:alertMsg isFatal:YES];
-    
-    return YES;
-}
-
-- (BOOL) appNeedsLocationServicesEnabledWithDefaultHandlerOption
-{
-    NSString *alertMsg = @"Your organization requires you to enable Location Services to run this app.";
-    [self showAlertMsg:alertMsg isFatal:YES];
-    
-    return YES;
-}
-
 #pragma mark - Network SDK
  - (void) handleNetworkNotification:(CTXMAMNotification *)notification
  {
@@ -167,41 +143,6 @@
      }
 
  }
-
-#pragma mark - Local Auth SDK
-- (BOOL) maxOfflinePeriodWillExceedWarning:(NSTimeInterval) secondsToExpire
-{
-    NSLog(@"Received maxOfflinePeriodWillExceedWarning");
-    NSString * alertMsg = [NSString stringWithFormat:@"Offline lease will expire in %f seconds. Please go online and login.", secondsToExpire];
-    [self showAlertMsg:alertMsg isFatal:NO];
-    return YES;
-}
-
-- (BOOL) maxOfflinePeriodExceeded
-{
-    NSLog(@"Received maxOfflinePeriodExceeded");
-    NSString * alertMsg = @"Offline lease has expired. Please login again.";
-    [self showAlertMsg:alertMsg isFatal:YES];
-    return YES;
-}
-
-- (BOOL) devicePasscodeRequired
-{
-    NSLog(@"Received devicePasscodeRequired");
-    NSString * alertMsg = @"Please set the device passcode and Touch ID/FaceID since it is required when Inactivity Timer expires.";
-    [self showAlertMsg:alertMsg isFatal:YES];
-    return YES;
-}
-
-#pragma mark - Core SDK
-- (BOOL) proxyServerSettingDetectedWithDefaultHandlerOption
-{
-    NSLog(@"Received proxyServerSettingDetected");
-    NSString * alertMsg = @"Proxy server setting is detected. The network request is stopped, since configuring a proxy server is not allowed.";
-    [self showAlertMsg:alertMsg isFatal:YES];
-    
-    return YES;
-}
 
 #pragma mark - Helper Method
 -(void)showAlertMsg:(NSString *)alertMsg isFatal:(BOOL)isFatal

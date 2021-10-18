@@ -46,10 +46,12 @@
         if (nilOrError) {
             NSString * alertMsg = [NSString stringWithFormat:@"Error initializing SDKs -> %@", nilOrError];
             NSLog(@"%@", alertMsg);
+            [self showAlertMsg:alertMsg isFatal:NO];
         }
         else {
             NSString * alertMsg = [NSString stringWithFormat:@"SDKs initialized and ready for use."];
             NSLog(@"%@", alertMsg);
+            [self showAlertMsg:alertMsg isFatal:NO];
         }
     }];
 

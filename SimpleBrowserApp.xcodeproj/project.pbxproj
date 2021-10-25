@@ -650,7 +650,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.CitrixSimpleBrowser;
 				PRODUCT_NAME = "Citrix Simple Browser";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBrowserApp/SimpleBrowserApp-Bridging-Header.h";
@@ -686,7 +686,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.SimpleBrowserApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrix.CitrixSimpleBrowser;
 				PRODUCT_NAME = "Citrix Simple Browser";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBrowserApp/SimpleBrowserApp-Bridging-Header.h";

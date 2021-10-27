@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6E3D0A3B2243E0240096198B"
                BuildableName = "Citrix Simple Browser.app"
-               BlueprintName = "SimpleBrowserApp"
+               BlueprintName = "CitrixSimpleBrowser"
                ReferencedContainer = "container:SimpleBrowserApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +32,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6E3D0A3B2243E0240096198B"
             BuildableName = "Citrix Simple Browser.app"
-            BlueprintName = "SimpleBrowserApp"
+            BlueprintName = "CitrixSimpleBrowser"
             ReferencedContainer = "container:SimpleBrowserApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -75,7 +75,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6E3D0A3B2243E0240096198B"
             BuildableName = "Citrix Simple Browser.app"
-            BlueprintName = "SimpleBrowserApp"
+            BlueprintName = "CitrixSimpleBrowser"
             ReferencedContainer = "container:SimpleBrowserApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -92,7 +92,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6E3D0A3B2243E0240096198B"
             BuildableName = "Citrix Simple Browser.app"
-            BlueprintName = "SimpleBrowserApp"
+            BlueprintName = "CitrixSimpleBrowser"
             ReferencedContainer = "container:SimpleBrowserApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

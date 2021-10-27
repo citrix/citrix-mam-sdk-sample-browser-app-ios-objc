@@ -284,9 +284,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E3D0A3B2243E0240096198B /* SimpleBrowserApp */ = {
+		6E3D0A3B2243E0240096198B /* CitrixSimpleBrowser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E3D0A682243E02D0096198B /* Build configuration list for PBXNativeTarget "SimpleBrowserApp" */;
+			buildConfigurationList = 6E3D0A682243E02D0096198B /* Build configuration list for PBXNativeTarget "CitrixSimpleBrowser" */;
 			buildPhases = (
 				6E3D0A382243E0240096198B /* Sources */,
 				6E3D0A392243E0240096198B /* Frameworks */,
@@ -298,7 +298,7 @@
 			);
 			dependencies = (
 			);
-			name = SimpleBrowserApp;
+			name = CitrixSimpleBrowser;
 			productName = SimpleBrowserApp;
 			productReference = 6E3D0A3C2243E0240096198B /* Citrix Simple Browser.app */;
 			productType = "com.apple.product-type.application";
@@ -380,7 +380,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E3D0A3B2243E0240096198B /* SimpleBrowserApp */,
+				6E3D0A3B2243E0240096198B /* CitrixSimpleBrowser */,
 				6E3D0A532243E02D0096198B /* SimpleBrowserAppTests */,
 				6E3D0A5E2243E02D0096198B /* SimpleBrowserAppUITests */,
 			);
@@ -481,12 +481,12 @@
 /* Begin PBXTargetDependency section */
 		6E3D0A562243E02D0096198B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E3D0A3B2243E0240096198B /* SimpleBrowserApp */;
+			target = 6E3D0A3B2243E0240096198B /* CitrixSimpleBrowser */;
 			targetProxy = 6E3D0A552243E02D0096198B /* PBXContainerItemProxy */;
 		};
 		6E3D0A612243E02D0096198B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E3D0A3B2243E0240096198B /* SimpleBrowserApp */;
+			target = 6E3D0A3B2243E0240096198B /* CitrixSimpleBrowser */;
 			targetProxy = 6E3D0A602243E02D0096198B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -781,7 +781,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E3D0A682243E02D0096198B /* Build configuration list for PBXNativeTarget "SimpleBrowserApp" */ = {
+		6E3D0A682243E02D0096198B /* Build configuration list for PBXNativeTarget "CitrixSimpleBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E3D0A692243E02D0096198B /* Debug */,

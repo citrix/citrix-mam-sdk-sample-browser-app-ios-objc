@@ -18,26 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    CTXMAMNotificationEventBlock notificationHandler = ^(CTXMAMNotification * _Nonnull notification)
-    {
-        //Do something with the notification
-        if([[notification Source] isEqualToString:CTXMAMNotificationSource_Core])
-        {
-            //Do something;
-        }
-        else if([[notification Source] isEqualToString:CTXMAMNotificationSource_Network])
-        {
-            [self handleNetworkNotification:notification];
-        }
-        else
-        {
-            // Handle any other unhandled notifications
-        }
-    };
 
-    [[CTXMAMNotificationCenter mainNotificationCenter] registerForNotificationsFromSource:CTXMAMNotificationSource_Core usingNotificationBlock:notificationHandler];
-    [[CTXMAMNotificationCenter mainNotificationCenter] registerForNotificationsFromSource:CTXMAMNotificationSource_Network usingNotificationBlock:notificationHandler];
+    [[CTXMAMNotificationCenter mainNotificationCenter] registerForNotificationsFromSource:CTXMAMNotificationSource_Core
+     usingNotificationBlock:^(CTXMAMNotification * _Nonnull notification) {
+         NSLog(@"%@", [notification Message]);
+     }];
+    
+    [[CTXMAMNotificationCenter mainNotificationCenter] registerForNotificationsFromSource:CTXMAMNotificationSource_Network
+     usingNotificationBlock:^(CTXMAMNotification * _Nonnull notification) {
+         [self handleNetworkNotification:notification];
+     }];
 
     [CTXMAMCore setDelegate:self];
 

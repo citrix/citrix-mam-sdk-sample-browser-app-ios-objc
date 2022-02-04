@@ -18,28 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    [[CTXMAMNotificationCenter mainNotificationCenter] registerForNotificationsFromSource:CTXMAMNotificationSource_Core
+     usingNotificationBlock:^(CTXMAMNotification * _Nonnull notification) {
+         NSLog(@"%@", [notification Message]);
+     }];
     
-    CTXMAMNotificationEventBlock notificationHandler = ^(CTXMAMNotification * _Nonnull notification)
-    {
-        //Do something with the notification
-        if([[notification Source] isEqualToString:CTXMAMNotificationSource_Core])
-        {
-            //Do something;
-        }
-        else if([[notification Source] isEqualToString:CTXMAMNotificationSource_Network])
-        {
-            [self handleNetworkNotification:notification];
-        }
-        else if([[notification Source] isEqualToString:CTXMAMNotificationSource_Containment])
-        {
-            [self handleContainmentNotification:notification];
-        }
-        else
-        {
-            // Handle any other unhandled notifications
-        }
-    };
-    [[CTXMAMNotificationCenter mainNotificationCenter] registerForNotificationsFromSource:CTXMAMNotificationSource_All usingNotificationBlock:notificationHandler];
+    [[CTXMAMNotificationCenter mainNotificationCenter] registerForNotificationsFromSource:CTXMAMNotificationSource_Network
+     usingNotificationBlock:^(CTXMAMNotification * _Nonnull notification) {
+         [self handleNetworkNotification:notification];
+     }];
+
     [CTXMAMCore setDelegate:self];
 
     [CTXMAMCore initializeSDKsWithCompletionBlock:^(NSError * _Nullable nilOrError) {
@@ -82,42 +71,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     [CTXMAMCore logoffApp];
-}
-
-#pragma mark - Containment SDK
-- (void) handleContainmentNotification:(CTXMAMNotification *)notification
-{
-    switch(notification.Error.code) {
-         case CTXAlertAppContainment_GEOFENCE_LocationServicesRequired :
-         case CTXAlertAppContainment_GEOFENCE_OutsideOfAcceptedArea :
-             // For these events, usage of the app may be restricted. They will be handled by delegate callback.
-             break;
-         case CTXAlertAppContainment_None :
-         case CTXAlertAppContainment_DISABLECOPY :
-         case CTXAlertAppContainment_DISABLEPASTE :
-         case CTXAlertAppContainment_DISABLEOPENIN :
-         case CTXAlertAppContainment_DISABLEICLOUD_FM :
-         case CTXAlertAppContainment_DISABLEICLOUD_KC :
-         case CTXAlertAppContainment_DISABLEPRINTING :
-         case CTXAlertAppContainment_DISABLECAMERA :
-         case CTXAlertAppContainment_DISABLEPHOTOLIBRARY :
-         case CTXAlertAppContainment_DISABLESMS :
-         case CTXAlertAppContainment_DISABLELOCATION :
-         case CTXAlertAppContainment_DISABLEMIC :
-         case CTXAlertAppContainment_DISABLE_SOCIAL_MEDIA :
-         case CTXAlertAppContainment_INBOUNDDOCEX :
-         case CTXAlertAppContainment_SECUREMAIL_NotInstalled :
-         case CTXAlertAppContainment_SECUREMAIL_Upgrade :
-         case CTXAlertAppContainment_MAILBLOCKED :
-         case CTXAlertAppContainment_Unknown :
-         {
-             // For these events, just display a notification
-             NSString *alertMsg = [notification Message];
-             NSLog(@"CTXMAM Containment Notification: [%@]", alertMsg);
-             [self showAlertMsg:alertMsg isFatal:NO];
-         }
-             break;
-     }
 }
 
 #pragma mark - Network SDK

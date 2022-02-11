@@ -293,6 +293,7 @@
 				6E3D0A3A2243E0240096198B /* Resources */,
 				6EFD6BF42244286D00E023D8 /* Embed Frameworks */,
 				6E3D0A7D22440BE30096198B /* Create MDX File */,
+				24D4139327B55D5D006653D0 /* Embed IPA Into MDX */,
 			);
 			buildRules = (
 			);
@@ -429,6 +430,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		24D4139327B55D5D006653D0 /* Embed IPA Into MDX */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Embed IPA Into MDX";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport TOOLKIT_DIR=\"$PROJECT_DIR/Tools\"\nexport IPA_FILE_PATH=\"\"\n\nif [ -z \"${IPA_FILE_PATH}\" ]\nthen\n    echo \"IPA_FILE_PATH variable was not found or was empty. If you wish to embed an IPA into the MDX, please generate an IPA and paste the full path, including the .ipa, into the IPA_FILE_PATH variable in the \\\"Embed IPA Into MDX\\\" post build script in \\\"Build Phases\\\".\"\n    exit 0\nfi\n\n\"$TOOLKIT_DIR/CGAppCLPrepTool\" SetInfo -in \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME.mdx\" -out \"$CONFIGURATION_BUILD_DIR/$EXECUTABLE_NAME-exported.mdx\" -embedBundle \"${IPA_FILE_PATH}\"\n";
+		};
 		6E3D0A7D22440BE30096198B /* Create MDX File */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

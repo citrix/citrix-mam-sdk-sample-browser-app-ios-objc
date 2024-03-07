@@ -10,8 +10,11 @@
 #import <CTXMAMCore/CTXMAMCore.h>
 #import <CTXMAMNetwork/CTXMAMNetwork.h>
 #import <CTXMAMContainment/CTXMAMContainment.h>
+#import "LoadingViewController.h"
 
 @interface AppDelegate () <CTXMAMCoreSdkDelegate>
+
+@property (nonatomic, strong) LoadingViewController *loadingViewController;
 @end
 
 @implementation AppDelegate
@@ -42,20 +45,43 @@
     [[CTXMAMNotificationCenter mainNotificationCenter] registerForNotificationsFromSource:CTXMAMNotificationSource_All usingNotificationBlock:notificationHandler];
     [CTXMAMCore setDelegate:self];
 
+    __weak __typeof(self)weakSelf = self;
     [CTXMAMCore initializeSDKsWithCompletionBlock:^(NSError * _Nullable nilOrError) {
         if (nilOrError) {
             NSString * alertMsg = [NSString stringWithFormat:@"Error initializing SDKs -> %@", nilOrError];
             NSLog(@"%@", alertMsg);
-            [self showAlertMsg:alertMsg isFatal:NO];
+            [weakSelf showAlertMsg:alertMsg isFatal:NO];
         }
         else {
             NSString * alertMsg = [NSString stringWithFormat:@"SDKs initialized and ready for use."];
             NSLog(@"%@", alertMsg);
-            [self showAlertMsg:alertMsg isFatal:NO];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (weakSelf.loadingViewController != nil) {
+                    [weakSelf.loadingViewController.view removeFromSuperview];
+                }
+            });
+            [weakSelf showAlertMsg:alertMsg isFatal:NO];
+            
         }
     }];
+    
+    if (![CTXMAMCore isSDKAndPolicyReady])
+    {
+        // show loading view
+        [self setupInitializationMessageViewControllerAndKeyWindow];
+    }
 
     return YES;
+}
+
+- (void)setupInitializationMessageViewControllerAndKeyWindow
+{
+    __weak __typeof(self)weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        weakSelf.loadingViewController = [[LoadingViewController alloc] initWithMessage:@"Starting Simple Browser..."];
+        [weakSelf.window addSubview:self.loadingViewController.view];
+    });
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
